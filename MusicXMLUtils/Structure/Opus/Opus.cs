@@ -43,7 +43,7 @@ namespace MusicXMLUtils.Structure.Opus
         public Opus()
         {
             this.Type = OpusType.Simple;
-            this.Show = OpusShow.replace;
+            this.Show = OpusShow.Replace;
             this.Actuate = OpusActuate.onRequest;
         }
         #endregion
@@ -65,7 +65,7 @@ namespace MusicXMLUtils.Structure.Opus
         public string Title { get; set; }
 
         [XmlAttribute(AttributeName = "show", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        [DefaultValue(OpusShow.replace)]
+        [DefaultValue(OpusShow.Replace)]
         public OpusShow Show { get; set; }
 
         [XmlAttribute(AttributeName = "actuate", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]

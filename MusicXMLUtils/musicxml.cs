@@ -40,24 +40,6 @@ namespace MusicXMLUtils
         public Opus opus { get; set; }
     }    
 
-    
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
-    [XmlType(TypeName = "opusShow", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]
-    public enum OpusShow
-    {
-        @new,
-
-        replace,
-
-        embed,
-
-        other,
-
-        none,
-    }
-
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
     [XmlType(TypeName = "opusActuate", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]

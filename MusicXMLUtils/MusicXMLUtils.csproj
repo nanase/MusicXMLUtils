@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="musicxml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structure\Opus\OpusShow.cs" />
     <Compile Include="Structure\Opus\OpusType.cs" />
     <Compile Include="Structure\Opus\Opus.cs" />
     <Compile Include="Structure\ScorePartwise.cs" />
