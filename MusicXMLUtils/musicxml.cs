@@ -95,24 +95,6 @@ namespace MusicXMLUtils
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
-    [XmlType("winged")]
-    public enum Winged
-    {
-        none,
-
-        straight,
-
-        curved,
-
-        [XmlEnum("double-straight")]
-        doublestraight,
-
-        [XmlEnum("double-curved")]
-        doublecurved,
-    }
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("ending")]
