@@ -35,8 +35,13 @@ namespace MusicXMLUtils
         {
             this.version = "3.0";
         }
+
         public static ScorePartwise Deserialize(string filepath)
         {
+            // ソース出典:
+            // MusicXmlSchema2.0
+            // https://github.com/AidenStrydom/MusicXmlSchema2.0
+
             if (!File.Exists(filepath))
                 throw new FileNotFoundException();
 
@@ -46,6 +51,10 @@ namespace MusicXMLUtils
 
         public static void Serialize(string filepath, ScorePartwise scorepartwise)
         {
+            // ソース出典:
+            // MusicXmlSchema2.0
+            // https://github.com/AidenStrydom/MusicXmlSchema2.0
+
             if (scorepartwise == null)
                 return;
 
@@ -62,6 +71,7 @@ namespace MusicXMLUtils
                 serializer.Serialize(writer, scorepartwise, nullSpace);
             }
         }
+
         public Work work { get; set; }
 
         [XmlElement("movement-number")]
