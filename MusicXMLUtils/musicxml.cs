@@ -37,45 +37,7 @@ namespace MusicXMLUtils
         public string worktitle { get; set; }
 
         public Opus opus { get; set; }
-    }
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategory("code")]
-    [XmlType("opus")]
-    public class Opus
-    {
-        public Opus()
-        {
-            this.type = OpusType.simple;
-            this.show = OpusShow.replace;
-            this.actuate = OpusActuate.onRequest;
-        }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
-        public string href { get; set; }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        public OpusType type { get; set; }
-
-        [XmlIgnore]
-        public bool typeSpecified { get; set; }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "token")]
-        public string role { get; set; }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "token")]
-        public string title { get; set; }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        [DefaultValue(OpusShow.replace)]
-        public OpusShow show { get; set; }
-
-        [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        [DefaultValue(OpusActuate.onRequest)]
-        public OpusActuate actuate { get; set; }
-    }
+    }    
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
