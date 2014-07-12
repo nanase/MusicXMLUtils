@@ -24,10 +24,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
 using System.CodeDom.Compiler;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Xml;
-using System.Xml.Schema;
 using System.Xml.Serialization;
 
 namespace MusicXMLUtils.Structure.Repeat
