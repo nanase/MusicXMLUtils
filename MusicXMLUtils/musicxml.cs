@@ -21,6 +21,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 using MusicXMLUtils.Structure.Opus;
+using MusicXMLUtils.Structure.Repeat;
 
 namespace MusicXMLUtils
 {
@@ -90,26 +91,6 @@ namespace MusicXMLUtils
         stop,
 
         single,
-    }
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategory("code")]
-    [XmlType("repeat")]
-    public class Repeat
-    {
-        [XmlAttribute]
-        public BackwardForward direction { get; set; }
-
-        [XmlAttribute(DataType = "nonNegativeInteger")]
-        public string times { get; set; }
-
-        [XmlAttribute]
-        public Winged winged { get; set; }
-
-        [XmlIgnore]
-        public bool wingedSpecified { get; set; }
     }
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
