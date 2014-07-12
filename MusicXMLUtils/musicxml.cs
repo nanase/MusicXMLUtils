@@ -6868,7 +6868,7 @@ namespace MusicXMLUtils
         {
             this.type = OpusType.Simple;
             this.show = OpusShow.replace;
-            this.actuate = OpusActuate.onRequest;
+            this.actuate = OpusActuate.OnRequest;
         }
 
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
@@ -6891,7 +6891,7 @@ namespace MusicXMLUtils
         public OpusShow show { get; set; }
 
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        [DefaultValue(OpusActuate.onRequest)]
+        [DefaultValue(OpusActuate.OnRequest)]
         public OpusActuate actuate { get; set; }
 
         [XmlAttribute(DataType = "token")]

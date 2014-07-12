@@ -34,15 +34,15 @@ namespace MusicXMLUtils.Structure.Opus
     public enum OpusActuate
     {
         [XmlEnum("onRequest")]
-        onRequest,
+        OnRequest,
 
         [XmlEnum("onLoad")]
-        onLoad,
+        OnLoad,
 
         [XmlEnum("other")]
-        other,
+        Other,
 
         [XmlEnum("none")]
-        none,
+        None,
     }
 }
