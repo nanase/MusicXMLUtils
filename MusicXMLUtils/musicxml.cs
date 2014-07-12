@@ -168,7 +168,7 @@ namespace MusicXMLUtils
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
-    [XmlType(TypeName = "OpusActuate", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]
+    [XmlType(TypeName = "opusActuate", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]
     public enum OpusActuate
     {
         onRequest,
