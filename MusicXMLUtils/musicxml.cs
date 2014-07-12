@@ -7261,7 +7261,7 @@ namespace MusicXMLUtils
         public Link()
         {
             this.type = OpusType.Simple;
-            this.show = OpusShow.replace;
+            this.show = OpusShow.Replace;
             this.actuate = OpusActuate.OnRequest;
         }
 
@@ -7281,7 +7281,7 @@ namespace MusicXMLUtils
         public string title { get; set; }
 
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
-        [DefaultValue(OpusShow.replace)]
+        [DefaultValue(OpusShow.Replace)]
         public OpusShow show { get; set; }
 
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
