@@ -171,10 +171,10 @@ namespace MusicXMLUtils
 
         curved,
 
-        [XmlEnumAttribute("double-straight")]
+        [XmlEnum("double-straight")]
         doublestraight,
 
-        [XmlEnumAttribute("double-curved")]
+        [XmlEnum("double-curved")]
         doublecurved,
     }
 
@@ -268,16 +268,16 @@ namespace MusicXMLUtils
 
         heavy,
 
-        [XmlEnumAttribute("light-light")]
+        [XmlEnum("light-light")]
         lightlight,
 
-        [XmlEnumAttribute("light-heavy")]
+        [XmlEnum("light-heavy")]
         lightheavy,
 
-        [XmlEnumAttribute("heavy-light")]
+        [XmlEnum("heavy-light")]
         heavylight,
 
-        [XmlEnumAttribute("heavy-heavy")]
+        [XmlEnum("heavy-heavy")]
         heavyheavy,
 
         tick,
@@ -595,7 +595,7 @@ namespace MusicXMLUtils
 
         square,
 
-        [XmlEnumAttribute("")]
+        [XmlEnum("")]
         Item,
     }
 
@@ -887,91 +887,91 @@ namespace MusicXMLUtils
 
         flat,
 
-        [XmlEnumAttribute("double-sharp")]
+        [XmlEnum("double-sharp")]
         doublesharp,
 
-        [XmlEnumAttribute("sharp-sharp")]
+        [XmlEnum("sharp-sharp")]
         sharpsharp,
 
-        [XmlEnumAttribute("flat-flat")]
+        [XmlEnum("flat-flat")]
         flatflat,
 
-        [XmlEnumAttribute("natural-sharp")]
+        [XmlEnum("natural-sharp")]
         naturalsharp,
 
-        [XmlEnumAttribute("natural-flat")]
+        [XmlEnum("natural-flat")]
         naturalflat,
 
-        [XmlEnumAttribute("quarter-flat")]
+        [XmlEnum("quarter-flat")]
         quarterflat,
 
-        [XmlEnumAttribute("quarter-sharp")]
+        [XmlEnum("quarter-sharp")]
         quartersharp,
 
-        [XmlEnumAttribute("three-quarters-flat")]
+        [XmlEnum("three-quarters-flat")]
         threequartersflat,
 
-        [XmlEnumAttribute("three-quarters-sharp")]
+        [XmlEnum("three-quarters-sharp")]
         threequarterssharp,
 
-        [XmlEnumAttribute("sharp-down")]
+        [XmlEnum("sharp-down")]
         sharpdown,
 
-        [XmlEnumAttribute("sharp-up")]
+        [XmlEnum("sharp-up")]
         sharpup,
 
-        [XmlEnumAttribute("natural-down")]
+        [XmlEnum("natural-down")]
         naturaldown,
 
-        [XmlEnumAttribute("natural-up")]
+        [XmlEnum("natural-up")]
         naturalup,
 
-        [XmlEnumAttribute("flat-down")]
+        [XmlEnum("flat-down")]
         flatdown,
 
-        [XmlEnumAttribute("flat-up")]
+        [XmlEnum("flat-up")]
         flatup,
 
-        [XmlEnumAttribute("triple-sharp")]
+        [XmlEnum("triple-sharp")]
         triplesharp,
 
-        [XmlEnumAttribute("triple-flat")]
+        [XmlEnum("triple-flat")]
         tripleflat,
 
-        [XmlEnumAttribute("slash-quarter-sharp")]
+        [XmlEnum("slash-quarter-sharp")]
         slashquartersharp,
 
-        [XmlEnumAttribute("slash-sharp")]
+        [XmlEnum("slash-sharp")]
         slashsharp,
 
-        [XmlEnumAttribute("slash-flat")]
+        [XmlEnum("slash-flat")]
         slashflat,
 
-        [XmlEnumAttribute("double-slash-flat")]
+        [XmlEnum("double-slash-flat")]
         doubleslashflat,
 
-        [XmlEnumAttribute("sharp-1")]
+        [XmlEnum("sharp-1")]
         sharp1,
 
-        [XmlEnumAttribute("sharp-2")]
+        [XmlEnum("sharp-2")]
         sharp2,
 
-        [XmlEnumAttribute("sharp-3")]
+        [XmlEnum("sharp-3")]
         sharp3,
 
-        [XmlEnumAttribute("sharp-5")]
+        [XmlEnum("sharp-5")]
         sharp5,
 
-        [XmlEnumAttribute("flat-1")]
+        [XmlEnum("flat-1")]
         flat1,
 
-        [XmlEnumAttribute("flat-2")]
+        [XmlEnum("flat-2")]
         flat2,
 
-        [XmlEnumAttribute("flat-3")]
+        [XmlEnum("flat-3")]
         flat3,
 
-        [XmlEnumAttribute("flat-4")]
+        [XmlEnum("flat-4")]
         flat4,
 
         sori,
@@ -1396,7 +1396,7 @@ namespace MusicXMLUtils
 
         diminished,
 
-        [XmlEnumAttribute("half-diminished")]
+        [XmlEnum("half-diminished")]
         halfdiminished,
     }
 
@@ -1584,61 +1584,61 @@ namespace MusicXMLUtils
 
         dominant,
 
-        [XmlEnumAttribute("major-seventh")]
+        [XmlEnum("major-seventh")]
         majorseventh,
 
-        [XmlEnumAttribute("minor-seventh")]
+        [XmlEnum("minor-seventh")]
         minorseventh,
 
-        [XmlEnumAttribute("diminished-seventh")]
+        [XmlEnum("diminished-seventh")]
         diminishedseventh,
 
-        [XmlEnumAttribute("augmented-seventh")]
+        [XmlEnum("augmented-seventh")]
         augmentedseventh,
 
-        [XmlEnumAttribute("half-diminished")]
+        [XmlEnum("half-diminished")]
         halfdiminished,
 
-        [XmlEnumAttribute("major-minor")]
+        [XmlEnum("major-minor")]
         majorminor,
 
-        [XmlEnumAttribute("major-sixth")]
+        [XmlEnum("major-sixth")]
         majorsixth,
 
-        [XmlEnumAttribute("minor-sixth")]
+        [XmlEnum("minor-sixth")]
         minorsixth,
 
-        [XmlEnumAttribute("dominant-ninth")]
+        [XmlEnum("dominant-ninth")]
         dominantninth,
 
-        [XmlEnumAttribute("major-ninth")]
+        [XmlEnum("major-ninth")]
         majorninth,
 
-        [XmlEnumAttribute("minor-ninth")]
+        [XmlEnum("minor-ninth")]
         minorninth,
 
-        [XmlEnumAttribute("dominant-11th")]
+        [XmlEnum("dominant-11th")]
         dominant11th,
 
-        [XmlEnumAttribute("major-11th")]
+        [XmlEnum("major-11th")]
         major11th,
 
-        [XmlEnumAttribute("minor-11th")]
+        [XmlEnum("minor-11th")]
         minor11th,
 
-        [XmlEnumAttribute("dominant-13th")]
+        [XmlEnum("dominant-13th")]
         dominant13th,
 
-        [XmlEnumAttribute("major-13th")]
+        [XmlEnum("major-13th")]
         major13th,
 
-        [XmlEnumAttribute("minor-13th")]
+        [XmlEnum("minor-13th")]
         minor13th,
 
-        [XmlEnumAttribute("suspended-second")]
+        [XmlEnum("suspended-second")]
         suspendedsecond,
 
-        [XmlEnumAttribute("suspended-fourth")]
+        [XmlEnum("suspended-fourth")]
         suspendedfourth,
 
         Neapolitan,
@@ -1833,25 +1833,25 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "note-type-value")]
     public enum NoteTypeValue
     {
-        [XmlEnumAttribute("1024th")]
+        [XmlEnum("1024th")]
         Item1024th,
 
-        [XmlEnumAttribute("512th")]
+        [XmlEnum("512th")]
         Item512th,
 
-        [XmlEnumAttribute("256th")]
+        [XmlEnum("256th")]
         Item256th,
 
-        [XmlEnumAttribute("128th")]
+        [XmlEnum("128th")]
         Item128th,
 
-        [XmlEnumAttribute("64th")]
+        [XmlEnum("64th")]
         Item64th,
 
-        [XmlEnumAttribute("32nd")]
+        [XmlEnum("32nd")]
         Item32nd,
 
-        [XmlEnumAttribute("16th")]
+        [XmlEnum("16th")]
         Item16th,
 
         eighth,
@@ -2278,12 +2278,12 @@ namespace MusicXMLUtils
 
         cut,
 
-        [XmlEnumAttribute("single-number")]
+        [XmlEnum("single-number")]
         singlenumber,
 
         note,
 
-        [XmlEnumAttribute("dotted-note")]
+        [XmlEnum("dotted-note")]
         dottednote,
 
         normal,
@@ -2350,14 +2350,14 @@ namespace MusicXMLUtils
     [XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType9
     {
-        [XmlEnumAttribute("beat-type")]
+        [XmlEnum("beat-type")]
         beattype,
 
         beats,
 
         interchangeable,
 
-        [XmlEnumAttribute("senza-misura")]
+        [XmlEnum("senza-misura")]
         senzamisura,
     }
 
@@ -2407,7 +2407,7 @@ namespace MusicXMLUtils
 
         right,
 
-        [XmlEnumAttribute("before-barline")]
+        [XmlEnum("before-barline")]
         beforebarline,
     }
 
@@ -2453,13 +2453,13 @@ namespace MusicXMLUtils
 
         fifths,
 
-        [XmlEnumAttribute("key-accidental")]
+        [XmlEnum("key-accidental")]
         keyaccidental,
 
-        [XmlEnumAttribute("key-alter")]
+        [XmlEnum("key-alter")]
         keyalter,
 
-        [XmlEnumAttribute("key-step")]
+        [XmlEnum("key-step")]
         keystep,
 
         mode,
@@ -2708,10 +2708,10 @@ namespace MusicXMLUtils
 
         cup,
 
-        [XmlEnumAttribute("harmon-no-stem")]
+        [XmlEnum("harmon-no-stem")]
         harmonnostem,
 
-        [XmlEnumAttribute("harmon-stem")]
+        [XmlEnum("harmon-stem")]
         harmonstem,
 
         bucket,
@@ -2724,10 +2724,10 @@ namespace MusicXMLUtils
 
         practice,
 
-        [XmlEnumAttribute("stop-mute")]
+        [XmlEnum("stop-mute")]
         stopmute,
 
-        [XmlEnumAttribute("stop-hand")]
+        [XmlEnum("stop-hand")]
         stophand,
 
         echo,
@@ -2756,17 +2756,17 @@ namespace MusicXMLUtils
     {
         high,
 
-        [XmlEnumAttribute("medium-high")]
+        [XmlEnum("medium-high")]
         mediumhigh,
 
         medium,
 
-        [XmlEnumAttribute("medium-low")]
+        [XmlEnum("medium-low")]
         mediumlow,
 
         low,
 
-        [XmlEnumAttribute("very-low")]
+        [XmlEnum("very-low")]
         verylow,
     }
 
@@ -2812,10 +2812,10 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "stick-type")]
     public enum StickType
     {
-        [XmlEnumAttribute("bass drum")]
+        [XmlEnum("bass drum")]
         bassdrum,
 
-        [XmlEnumAttribute("double bass drum")]
+        [XmlEnum("double bass drum")]
         doublebassdrum,
 
         timpani,
@@ -2887,7 +2887,7 @@ namespace MusicXMLUtils
     {
         bow,
 
-        [XmlEnumAttribute("chime hammer")]
+        [XmlEnum("chime hammer")]
         chimehammer,
 
         coin,
@@ -2898,35 +2898,35 @@ namespace MusicXMLUtils
 
         fist,
 
-        [XmlEnumAttribute("guiro scraper")]
+        [XmlEnum("guiro scraper")]
         guiroscraper,
 
         hammer,
 
         hand,
 
-        [XmlEnumAttribute("jazz stick")]
+        [XmlEnum("jazz stick")]
         jazzstick,
 
-        [XmlEnumAttribute("knitting needle")]
+        [XmlEnum("knitting needle")]
         knittingneedle,
 
-        [XmlEnumAttribute("metal hammer")]
+        [XmlEnum("metal hammer")]
         metalhammer,
 
-        [XmlEnumAttribute("snare stick")]
+        [XmlEnum("snare stick")]
         snarestick,
 
-        [XmlEnumAttribute("spoon mallet")]
+        [XmlEnum("spoon mallet")]
         spoonmallet,
 
-        [XmlEnumAttribute("triangle beater")]
+        [XmlEnum("triangle beater")]
         trianglebeater,
 
-        [XmlEnumAttribute("triangle beater plain")]
+        [XmlEnum("triangle beater plain")]
         trianglebeaterplain,
 
-        [XmlEnumAttribute("wire brush")]
+        [XmlEnum("wire brush")]
         wirebrush,
     }
 
@@ -2964,41 +2964,41 @@ namespace MusicXMLUtils
     {
         anvil,
 
-        [XmlEnumAttribute("auto horn")]
+        [XmlEnum("auto horn")]
         autohorn,
 
-        [XmlEnumAttribute("bird whistle")]
+        [XmlEnum("bird whistle")]
         birdwhistle,
 
         cannon,
 
-        [XmlEnumAttribute("duck call")]
+        [XmlEnum("duck call")]
         duckcall,
 
-        [XmlEnumAttribute("gun shot")]
+        [XmlEnum("gun shot")]
         gunshot,
 
-        [XmlEnumAttribute("klaxon horn")]
+        [XmlEnum("klaxon horn")]
         klaxonhorn,
 
-        [XmlEnumAttribute("lions roar")]
+        [XmlEnum("lions roar")]
         lionsroar,
 
-        [XmlEnumAttribute("police whistle")]
+        [XmlEnum("police whistle")]
         policewhistle,
 
         siren,
 
-        [XmlEnumAttribute("slide whistle")]
+        [XmlEnum("slide whistle")]
         slidewhistle,
 
-        [XmlEnumAttribute("thunder sheet")]
+        [XmlEnum("thunder sheet")]
         thundersheet,
 
-        [XmlEnumAttribute("wind machine")]
+        [XmlEnum("wind machine")]
         windmachine,
 
-        [XmlEnumAttribute("wind whistle")]
+        [XmlEnum("wind whistle")]
         windwhistle,
     }
 
@@ -3007,7 +3007,7 @@ namespace MusicXMLUtils
     [XmlType("glass")]
     public enum Glass
     {
-        [XmlEnumAttribute("wind chimes")]
+        [XmlEnum("wind chimes")]
         windchimes,
     }
 
@@ -3016,32 +3016,32 @@ namespace MusicXMLUtils
     [XmlType("membrane")]
     public enum Membrane
     {
-        [XmlEnumAttribute("bass drum")]
+        [XmlEnum("bass drum")]
         bassdrum,
 
-        [XmlEnumAttribute("bass drum on side")]
+        [XmlEnum("bass drum on side")]
         bassdrumonside,
 
         bongos,
 
-        [XmlEnumAttribute("conga drum")]
+        [XmlEnum("conga drum")]
         congadrum,
 
-        [XmlEnumAttribute("goblet drum")]
+        [XmlEnum("goblet drum")]
         gobletdrum,
 
-        [XmlEnumAttribute("military drum")]
+        [XmlEnum("military drum")]
         militarydrum,
 
-        [XmlEnumAttribute("snare drum")]
+        [XmlEnum("snare drum")]
         snaredrum,
 
-        [XmlEnumAttribute("snare drum snares off")]
+        [XmlEnum("snare drum snares off")]
         snaredrumsnaresoff,
 
         tambourine,
 
-        [XmlEnumAttribute("tenor drum")]
+        [XmlEnum("tenor drum")]
         tenordrum,
 
         timbales,
@@ -3058,60 +3058,60 @@ namespace MusicXMLUtils
 
         bell,
 
-        [XmlEnumAttribute("bell plate")]
+        [XmlEnum("bell plate")]
         bellplate,
 
-        [XmlEnumAttribute("brake drum")]
+        [XmlEnum("brake drum")]
         brakedrum,
 
-        [XmlEnumAttribute("Chinese cymbal")]
+        [XmlEnum("Chinese cymbal")]
         Chinesecymbal,
 
         cowbell,
 
-        [XmlEnumAttribute("crash cymbals")]
+        [XmlEnum("crash cymbals")]
         crashcymbals,
 
         crotale,
 
-        [XmlEnumAttribute("cymbal tongs")]
+        [XmlEnum("cymbal tongs")]
         cymbaltongs,
 
-        [XmlEnumAttribute("domed gong")]
+        [XmlEnum("domed gong")]
         domedgong,
 
-        [XmlEnumAttribute("finger cymbals")]
+        [XmlEnum("finger cymbals")]
         fingercymbals,
 
         flexatone,
 
         gong,
 
-        [XmlEnumAttribute("hi-hat")]
+        [XmlEnum("hi-hat")]
         hihat,
 
-        [XmlEnumAttribute("high-hat cymbals")]
+        [XmlEnum("high-hat cymbals")]
         highhatcymbals,
 
         handbell,
 
         sistrum,
 
-        [XmlEnumAttribute("sizzle cymbal")]
+        [XmlEnum("sizzle cymbal")]
         sizzlecymbal,
 
-        [XmlEnumAttribute("sleigh bells")]
+        [XmlEnum("sleigh bells")]
         sleighbells,
 
-        [XmlEnumAttribute("suspended cymbal")]
+        [XmlEnum("suspended cymbal")]
         suspendedcymbal,
 
-        [XmlEnumAttribute("tam tam")]
+        [XmlEnum("tam tam")]
         tamtam,
 
         triangle,
 
-        [XmlEnumAttribute("Vietnamese hat")]
+        [XmlEnum("Vietnamese hat")]
         Vietnamesehat,
     }
 
@@ -3128,7 +3128,7 @@ namespace MusicXMLUtils
 
         marimba,
 
-        [XmlEnumAttribute("tubular chimes")]
+        [XmlEnum("tubular chimes")]
         tubularchimes,
 
         vibraphone,
@@ -3145,10 +3145,10 @@ namespace MusicXMLUtils
 
         rim,
 
-        [XmlEnumAttribute("cymbal bell")]
+        [XmlEnum("cymbal bell")]
         cymbalbell,
 
-        [XmlEnumAttribute("cymbal edge")]
+        [XmlEnum("cymbal edge")]
         cymbaledge,
     }
 
@@ -3157,7 +3157,7 @@ namespace MusicXMLUtils
     [XmlType("wood")]
     public enum Wood
     {
-        [XmlEnumAttribute("board clapper")]
+        [XmlEnum("board clapper")]
         boardclapper,
 
         cabasa,
@@ -3168,7 +3168,7 @@ namespace MusicXMLUtils
 
         guiro,
 
-        [XmlEnumAttribute("log drum")]
+        [XmlEnum("log drum")]
         logdrum,
 
         maraca,
@@ -3177,18 +3177,18 @@ namespace MusicXMLUtils
 
         ratchet,
 
-        [XmlEnumAttribute("sandpaper blocks")]
+        [XmlEnum("sandpaper blocks")]
         sandpaperblocks,
 
-        [XmlEnumAttribute("slit drum")]
+        [XmlEnum("slit drum")]
         slitdrum,
 
-        [XmlEnumAttribute("temple block")]
+        [XmlEnum("temple block")]
         templeblock,
 
         vibraslap,
 
-        [XmlEnumAttribute("wood block")]
+        [XmlEnum("wood block")]
         woodblock,
     }
 
@@ -3422,10 +3422,10 @@ namespace MusicXMLUtils
 
         end,
 
-        [XmlEnumAttribute("forward hook")]
+        [XmlEnum("forward hook")]
         forwardhook,
 
-        [XmlEnumAttribute("backward hook")]
+        [XmlEnum("backward hook")]
         backwardhook,
     }
 
@@ -3956,7 +3956,7 @@ namespace MusicXMLUtils
 
         mp,
 
-        [XmlEnumAttribute("other-dynamics")]
+        [XmlEnum("other-dynamics")]
         otherdynamics,
 
         p,
@@ -4005,7 +4005,7 @@ namespace MusicXMLUtils
     [XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType7
     {
-        [XmlEnumAttribute("accordion-registration")]
+        [XmlEnum("accordion-registration")]
         accordionregistration,
 
         bracket,
@@ -4014,7 +4014,7 @@ namespace MusicXMLUtils
 
         damp,
 
-        [XmlEnumAttribute("damp-all")]
+        [XmlEnum("damp-all")]
         dampall,
 
         dashes,
@@ -4023,24 +4023,24 @@ namespace MusicXMLUtils
 
         eyeglasses,
 
-        [XmlEnumAttribute("harp-pedals")]
+        [XmlEnum("harp-pedals")]
         harppedals,
 
         image,
 
         metronome,
 
-        [XmlEnumAttribute("octave-shift")]
+        [XmlEnum("octave-shift")]
         octaveshift,
 
-        [XmlEnumAttribute("other-direction")]
+        [XmlEnum("other-direction")]
         otherdirection,
 
         pedal,
 
         percussion,
 
-        [XmlEnumAttribute("principal-voice")]
+        [XmlEnum("principal-voice")]
         principalvoice,
 
         rehearsal,
@@ -4049,7 +4049,7 @@ namespace MusicXMLUtils
 
         segno,
 
-        [XmlEnumAttribute("string-mute")]
+        [XmlEnum("string-mute")]
         stringmute,
 
         wedge,
@@ -4624,7 +4624,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "breath-mark-value")]
     public enum BreathMarkValue
     {
-        [XmlEnumAttribute("")]
+        [XmlEnum("")]
         Item,
 
         comma,
@@ -4704,19 +4704,19 @@ namespace MusicXMLUtils
     {
         accent,
 
-        [XmlEnumAttribute("breath-mark")]
+        [XmlEnum("breath-mark")]
         breathmark,
 
         caesura,
 
-        [XmlEnumAttribute("detached-legato")]
+        [XmlEnum("detached-legato")]
         detachedlegato,
 
         doit,
 
         falloff,
 
-        [XmlEnumAttribute("other-articulation")]
+        [XmlEnum("other-articulation")]
         otherarticulation,
 
         plop,
@@ -4731,7 +4731,7 @@ namespace MusicXMLUtils
 
         stress,
 
-        [XmlEnumAttribute("strong-accent")]
+        [XmlEnum("strong-accent")]
         strongaccent,
 
         tenuto,
@@ -4818,16 +4818,16 @@ namespace MusicXMLUtils
 
         southwest,
 
-        [XmlEnumAttribute("left right")]
+        [XmlEnum("left right")]
         leftright,
 
-        [XmlEnumAttribute("up down")]
+        [XmlEnum("up down")]
         updown,
 
-        [XmlEnumAttribute("northwest southeast")]
+        [XmlEnum("northwest southeast")]
         northwestsoutheast,
 
-        [XmlEnumAttribute("northeast southwest")]
+        [XmlEnum("northeast southwest")]
         northeastsouthwest,
 
         other,
@@ -4914,7 +4914,7 @@ namespace MusicXMLUtils
     [XmlType(IncludeInSchema = false)]
     public enum ItemChoiceType1
     {
-        [XmlEnumAttribute("pre-bend")]
+        [XmlEnum("pre-bend")]
         prebend,
 
         release,
@@ -4977,24 +4977,24 @@ namespace MusicXMLUtils
 
         gyro,
 
-        [XmlEnumAttribute("hand martellato")]
+        [XmlEnum("hand martellato")]
         handmartellato,
 
-        [XmlEnumAttribute("mallet lift")]
+        [XmlEnum("mallet lift")]
         malletlift,
 
-        [XmlEnumAttribute("mallet table")]
+        [XmlEnum("mallet table")]
         mallettable,
 
         martellato,
 
-        [XmlEnumAttribute("martellato lift")]
+        [XmlEnum("martellato lift")]
         martellatolift,
 
-        [XmlEnumAttribute("muted martellato")]
+        [XmlEnum("muted martellato")]
         mutedmartellato,
 
-        [XmlEnumAttribute("pluck lift")]
+        [XmlEnum("pluck lift")]
         plucklift,
 
         swing,
@@ -5052,13 +5052,13 @@ namespace MusicXMLUtils
     [XmlType(IncludeInSchema = false)]
     public enum Item1ChoiceType
     {
-        [XmlEnumAttribute("base-pitch")]
+        [XmlEnum("base-pitch")]
         basepitch,
 
-        [XmlEnumAttribute("sounding-pitch")]
+        [XmlEnum("sounding-pitch")]
         soundingpitch,
 
-        [XmlEnumAttribute("touching-pitch")]
+        [XmlEnum("touching-pitch")]
         touchingpitch,
     }
 
@@ -5137,10 +5137,10 @@ namespace MusicXMLUtils
 
         bend,
 
-        [XmlEnumAttribute("double-tongue")]
+        [XmlEnum("double-tongue")]
         doubletongue,
 
-        [XmlEnumAttribute("down-bow")]
+        [XmlEnum("down-bow")]
         downbow,
 
         fingering,
@@ -5149,7 +5149,7 @@ namespace MusicXMLUtils
 
         fret,
 
-        [XmlEnumAttribute("hammer-on")]
+        [XmlEnum("hammer-on")]
         hammeron,
 
         handbell,
@@ -5160,18 +5160,18 @@ namespace MusicXMLUtils
 
         hole,
 
-        [XmlEnumAttribute("open-string")]
+        [XmlEnum("open-string")]
         openstring,
 
-        [XmlEnumAttribute("other-technical")]
+        [XmlEnum("other-technical")]
         othertechnical,
 
         pluck,
 
-        [XmlEnumAttribute("pull-off")]
+        [XmlEnum("pull-off")]
         pulloff,
 
-        [XmlEnumAttribute("snap-pizzicato")]
+        [XmlEnum("snap-pizzicato")]
         snappizzicato,
 
         stopped,
@@ -5180,15 +5180,15 @@ namespace MusicXMLUtils
 
         tap,
 
-        [XmlEnumAttribute("thumb-position")]
+        [XmlEnum("thumb-position")]
         thumbposition,
 
         toe,
 
-        [XmlEnumAttribute("triple-tongue")]
+        [XmlEnum("triple-tongue")]
         tripletongue,
 
-        [XmlEnumAttribute("up-bow")]
+        [XmlEnum("up-bow")]
         upbow,
     }
 
@@ -5416,21 +5416,21 @@ namespace MusicXMLUtils
     [XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType2
     {
-        [XmlEnumAttribute("delayed-inverted-turn")]
+        [XmlEnum("delayed-inverted-turn")]
         delayedinvertedturn,
 
-        [XmlEnumAttribute("delayed-turn")]
+        [XmlEnum("delayed-turn")]
         delayedturn,
 
-        [XmlEnumAttribute("inverted-mordent")]
+        [XmlEnum("inverted-mordent")]
         invertedmordent,
 
-        [XmlEnumAttribute("inverted-turn")]
+        [XmlEnum("inverted-turn")]
         invertedturn,
 
         mordent,
 
-        [XmlEnumAttribute("other-ornament")]
+        [XmlEnum("other-ornament")]
         otherornament,
 
         schleifer,
@@ -5439,15 +5439,15 @@ namespace MusicXMLUtils
 
         tremolo,
 
-        [XmlEnumAttribute("trill-mark")]
+        [XmlEnum("trill-mark")]
         trillmark,
 
         turn,
 
-        [XmlEnumAttribute("vertical-turn")]
+        [XmlEnum("vertical-turn")]
         verticalturn,
 
-        [XmlEnumAttribute("wavy-line")]
+        [XmlEnum("wavy-line")]
         wavyline,
     }
 
@@ -6125,31 +6125,31 @@ namespace MusicXMLUtils
 
         x,
 
-        [XmlEnumAttribute("circle-x")]
+        [XmlEnum("circle-x")]
         circlex,
 
-        [XmlEnumAttribute("inverted triangle")]
+        [XmlEnum("inverted triangle")]
         invertedtriangle,
 
-        [XmlEnumAttribute("arrow down")]
+        [XmlEnum("arrow down")]
         arrowdown,
 
-        [XmlEnumAttribute("arrow up")]
+        [XmlEnum("arrow up")]
         arrowup,
 
         slashed,
 
-        [XmlEnumAttribute("back slashed")]
+        [XmlEnum("back slashed")]
         backslashed,
 
         normal,
 
         cluster,
 
-        [XmlEnumAttribute("circle dot")]
+        [XmlEnum("circle dot")]
         circledot,
 
-        [XmlEnumAttribute("left triangle")]
+        [XmlEnum("left triangle")]
         lefttriangle,
 
         rectangle,
@@ -6164,7 +6164,7 @@ namespace MusicXMLUtils
 
         fa,
 
-        [XmlEnumAttribute("fa up")]
+        [XmlEnum("fa up")]
         faup,
 
         so,
@@ -6741,10 +6741,10 @@ namespace MusicXMLUtils
     {
         encoder,
 
-        [XmlEnumAttribute("encoding-date")]
+        [XmlEnum("encoding-date")]
         encodingdate,
 
-        [XmlEnumAttribute("encoding-description")]
+        [XmlEnum("encoding-description")]
         encodingdescription,
 
         software,
