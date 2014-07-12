@@ -40,13 +40,7 @@ namespace MusicXMLUtils
         public Opus opus { get; set; }
     }    
 
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
-    [XmlType(TypeName = "opusType", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]
-    public enum OpusType
-    {
-        simple,
-    }
+    
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
@@ -6933,7 +6927,7 @@ namespace MusicXMLUtils
     {
         public Link()
         {
-            this.type = OpusType.simple;
+            this.type = OpusType.Simple;
             this.show = OpusShow.replace;
             this.actuate = OpusActuate.onRequest;
         }

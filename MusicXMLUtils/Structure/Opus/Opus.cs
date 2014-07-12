@@ -42,7 +42,7 @@ namespace MusicXMLUtils.Structure.Opus
         #region -- Constructors --
         public Opus()
         {
-            this.Type = OpusType.simple;
+            this.Type = OpusType.Simple;
             this.Show = OpusShow.replace;
             this.Actuate = OpusActuate.onRequest;
         }
