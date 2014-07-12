@@ -45,6 +45,7 @@
     <Compile Include="Structure\Opus\OpusShow.cs" />
     <Compile Include="Structure\Opus\OpusType.cs" />
     <Compile Include="Structure\Opus\Opus.cs" />
+    <Compile Include="Structure\Repeat\BackwardForward.cs" />
     <Compile Include="Structure\Repeat\Repeat.cs" />
     <Compile Include="Structure\ScorePartwise.cs" />
   </ItemGroup>

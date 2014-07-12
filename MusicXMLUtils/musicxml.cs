@@ -95,16 +95,6 @@ namespace MusicXMLUtils
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
-    [XmlType(TypeName = "backward-forward")]
-    public enum BackwardForward
-    {
-        backward,
-
-        forward,
-    }
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
     [XmlType("winged")]
     public enum Winged
     {
