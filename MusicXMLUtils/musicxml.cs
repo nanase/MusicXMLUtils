@@ -33,7 +33,7 @@ namespace MusicXMLUtils
     {
         public ScorePartwise()
         {
-            this.version = "3.0";
+            this.Version = "3.0";
         }
 
         public static ScorePartwise Deserialize(string filepath)
@@ -72,30 +72,33 @@ namespace MusicXMLUtils
             }
         }
 
-        public Work work { get; set; }
+        [XmlElement("work")]
+        public Work Work { get; set; }
 
         [XmlElement("movement-number")]
-        public string movementnumber { get; set; }
+        public string MovementNumber { get; set; }
 
         [XmlElement("movement-title")]
-        public string movementtitle { get; set; }
+        public string MovementTitle { get; set; }
 
-        public Identification identification { get; set; }
+        [XmlElement("identification")]
+        public Identification Identification { get; set; }
 
-        public Defaults defaults { get; set; }
+        [XmlElement("defaults")]
+        public Defaults Defaults { get; set; }
 
         [XmlElement("credit")]
-        public Credit[] credit { get; set; }
+        public Credit[] Credit { get; set; }
 
         [XmlElement("part-list")]
-        public PartList partlist { get; set; }
+        public PartList PartList { get; set; }
 
         [XmlElement("part")]
-        public ScorePartwisePart[] part { get; set; }
+        public ScorePartwisePart[] Part { get; set; }
 
         [XmlAttribute(DataType = "token")]
         [DefaultValue("3.0")]
-        public string version { get; set; }
+        public string Version { get; set; }
     }
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
