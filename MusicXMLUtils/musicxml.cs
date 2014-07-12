@@ -42,20 +42,6 @@ namespace MusicXMLUtils
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
-    [XmlType(TypeName = "opusActuate", AnonymousType = true, Namespace = "http://www.w3.org/1999/xlink")]
-    public enum OpusActuate
-    {
-        onRequest,
-
-        onLoad,
-
-        other,
-
-        none,
-    }
-
-    [GeneratedCode("xsd", "4.0.30319.18020")]
-    [Serializable]
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("feature")]
