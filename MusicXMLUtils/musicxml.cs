@@ -2383,7 +2383,7 @@ namespace MusicXMLUtils
         [XmlElement("beats", typeof(string))]
         [XmlElement("interchangeable", typeof(Interchangeable))]
         [XmlElement("senza-misura", typeof(string))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -2495,7 +2495,7 @@ namespace MusicXMLUtils
         [XmlElement("key-alter", typeof(decimal))]
         [XmlElement("key-step", typeof(Step))]
         [XmlElement("mode", typeof(string))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -4054,7 +4054,7 @@ namespace MusicXMLUtils
         [XmlElement("string-mute", typeof(StringMute))]
         [XmlElement("wedge", typeof(Wedge))]
         [XmlElement("words", typeof(FormattedText))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -4093,7 +4093,7 @@ namespace MusicXMLUtils
         [XmlElement("sfp", typeof(Empty))]
         [XmlElement("sfpp", typeof(Empty))]
         [XmlElement("sfz", typeof(Empty))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -4516,7 +4516,7 @@ namespace MusicXMLUtils
         [XmlElement("laughing", typeof(Empty))]
         [XmlElement("syllabic", typeof(Syllabic))]
         [XmlElement("text", typeof(TextElementData))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -4808,7 +4808,7 @@ namespace MusicXMLUtils
         [XmlElement("strong-accent", typeof(StrongAccent))]
         [XmlElement("tenuto", typeof(EmptyPlacement))]
         [XmlElement("unstress", typeof(EmptyPlacement))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -5047,7 +5047,7 @@ namespace MusicXMLUtils
         [XmlElement("toe", typeof(HeelToe))]
         [XmlElement("triple-tongue", typeof(EmptyPlacement))]
         [XmlElement("up-bow", typeof(EmptyPlacement))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -5170,7 +5170,7 @@ namespace MusicXMLUtils
 
         [XmlElement("pre-bend", typeof(Empty))]
         [XmlElement("release", typeof(Empty))]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [XmlChoiceIdentifier("ItemElementName")]
         public Empty Item { get; set; }
 
         [XmlIgnore]
@@ -5310,7 +5310,7 @@ namespace MusicXMLUtils
     {
         [XmlElement("artificial", typeof(Empty))]
         [XmlElement("natural", typeof(Empty))]
-        [XmlChoiceIdentifierAttribute("ItemElementName")]
+        [XmlChoiceIdentifier("ItemElementName")]
         public Empty Item { get; set; }
 
         [XmlIgnore]
@@ -5319,7 +5319,7 @@ namespace MusicXMLUtils
         [XmlElement("base-pitch", typeof(Empty))]
         [XmlElement("sounding-pitch", typeof(Empty))]
         [XmlElement("touching-pitch", typeof(Empty))]
-        [XmlChoiceIdentifierAttribute("Item1ElementName")]
+        [XmlChoiceIdentifier("Item1ElementName")]
         public Empty Item1 { get; set; }
 
         [XmlIgnore]
@@ -5724,7 +5724,7 @@ namespace MusicXMLUtils
         [XmlElement("turn", typeof(HorizontalTurn))]
         [XmlElement("vertical-turn", typeof(EmptyTrillSound))]
         [XmlElement("wavy-line", typeof(WavyLine))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -6768,7 +6768,7 @@ namespace MusicXMLUtils
         [XmlElement("rest", typeof(Rest))]
         [XmlElement("tie", typeof(Tie))]
         [XmlElement("unpitched", typeof(Unpitched))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
@@ -7086,7 +7086,7 @@ namespace MusicXMLUtils
         [XmlElement("encoding-description", typeof(string))]
         [XmlElement("software", typeof(string))]
         [XmlElement("supports", typeof(Supports))]
-        [XmlChoiceIdentifierAttribute("ItemsElementName")]
+        [XmlChoiceIdentifier("ItemsElementName")]
         public object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
