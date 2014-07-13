@@ -1817,7 +1817,7 @@ namespace MusicXMLUtils
     public enum HarmonyType
     {
         [XmlEnum("explicit")]
-        @explicit,
+        Explicit,
 
         [XmlEnum("implied")]
         Implied,
@@ -1897,7 +1897,7 @@ namespace MusicXMLUtils
         Breve,
 
         [XmlEnum("long")]
-        @long,
+        Long,
 
         [XmlEnum("maxima")]
         Maxima,
@@ -3555,7 +3555,7 @@ namespace MusicXMLUtils
         Stop,
 
         [XmlEnum("continue")]
-        @continue,
+        Continue,
     }
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
@@ -3587,7 +3587,7 @@ namespace MusicXMLUtils
         Begin,
 
         [XmlEnum("continue")]
-        @continue,
+        Continue,
 
         [XmlEnum("end")]
         End,
@@ -3772,7 +3772,7 @@ namespace MusicXMLUtils
         Change,
 
         [XmlEnum("continue")]
-        @continue,
+        Continue,
     }
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
@@ -4021,7 +4021,7 @@ namespace MusicXMLUtils
         Stop,
 
         [XmlEnum("continue")]
-        @continue,
+        Continue,
     }
 
     [GeneratedCode("xsd", "4.0.30319.18020")]
@@ -5127,7 +5127,7 @@ namespace MusicXMLUtils
         Single,
 
         [XmlEnum("double")]
-        @double,
+        Double,
 
         [XmlEnum("filled")]
         Filled,
@@ -5497,7 +5497,7 @@ namespace MusicXMLUtils
         Stopped,
 
         [XmlEnum("string")]
-        @string,
+        String,
 
         [XmlEnum("tap")]
         Tap,
@@ -6503,7 +6503,7 @@ namespace MusicXMLUtils
         None,
 
         [XmlEnum("do")]
-        @do,
+        Do,
 
         [XmlEnum("re")]
         Re,
@@ -6577,7 +6577,7 @@ namespace MusicXMLUtils
         Up,
 
         [XmlEnum("double")]
-        @double,
+        Double,
 
         [XmlEnum("none")]
         None,
