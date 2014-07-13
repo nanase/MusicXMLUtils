@@ -70,7 +70,7 @@ namespace MusicXMLUtils
         [XmlElement("feature")]
         public Feature[] feature { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopSingle type { get; set; }
 
         [XmlAttribute(DataType = "token")]
@@ -106,7 +106,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopDiscontinue type { get; set; }
 
         [XmlAttribute("print-object")]
@@ -256,7 +256,7 @@ namespace MusicXMLUtils
         [XmlElement("repeat")]
         public Repeat repeat { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         [DefaultValue(RightLeftMiddle.Right)]
         public RightLeftMiddle location { get; set; }
 
@@ -266,7 +266,7 @@ namespace MusicXMLUtils
         [XmlAttribute("coda", DataType = "token")]
         public string coda1 { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "divisions")]
         public decimal divisions { get; set; }
 
         [XmlIgnore]
@@ -297,25 +297,25 @@ namespace MusicXMLUtils
     [XmlType("level")]
     public class Level
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "reference")]
         public YesNo reference { get; set; }
 
         [XmlIgnore]
         public bool referenceSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "parentheses")]
         public YesNo parentheses { get; set; }
 
         [XmlIgnore]
         public bool parenthesesSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "bracket")]
         public YesNo bracket { get; set; }
 
         [XmlIgnore]
         public bool bracketSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "size")]
         public SymbolSize size { get; set; }
 
         [XmlIgnore]
@@ -347,7 +347,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "wavy-line")]
     public class WavyLine
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -377,7 +377,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -404,13 +404,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool twonoteturnSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "accelerate")]
         public YesNo accelerate { get; set; }
 
         [XmlIgnore]
         public bool accelerateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "beats")]
         public decimal beats { get; set; }
 
         [XmlIgnore]
@@ -517,7 +517,7 @@ namespace MusicXMLUtils
     [XmlType("fermata")]
     public class Fermata
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public UprightInverted type { get; set; }
 
         [XmlIgnore]
@@ -701,7 +701,7 @@ namespace MusicXMLUtils
         [XmlElement("bottom-margin")]
         public decimal bottommargin { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public MarginType type { get; set; }
 
         [XmlIgnore]
@@ -989,7 +989,7 @@ namespace MusicXMLUtils
     [XmlType("extend")]
     public class Extend
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlIgnore]
@@ -1027,7 +1027,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printlyricSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "parentheses")]
         public YesNo parentheses { get; set; }
 
         [XmlIgnore]
@@ -1041,7 +1041,7 @@ namespace MusicXMLUtils
     [XmlType("barre")]
     public class Barre
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "token")]
@@ -1086,7 +1086,7 @@ namespace MusicXMLUtils
     [XmlType("string")]
     public class String
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -1159,19 +1159,19 @@ namespace MusicXMLUtils
     [XmlType("fingering")]
     public class Fingering
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "substitution")]
         public YesNo substitution { get; set; }
 
         [XmlIgnore]
         public bool substitutionSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "alternate")]
         public YesNo alternate { get; set; }
 
         [XmlIgnore]
         public bool alternateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -1191,7 +1191,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string text { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         public LeftRight location { get; set; }
 
         [XmlIgnore]
@@ -1259,25 +1259,25 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string color { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "halign")]
         public LeftCenterRight halign { get; set; }
 
         [XmlIgnore]
         public bool halignSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "valign")]
         public ValignImage valign { get; set; }
 
         [XmlIgnore]
         public bool valignSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "height")]
         public decimal height { get; set; }
 
         [XmlIgnore]
         public bool heightSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "width")]
         public decimal width { get; set; }
 
         [XmlIgnore]
@@ -1368,7 +1368,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "degree-value")]
     public class DegreeValue
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "symbol")]
         public DegreeSymbolValue symbol { get; set; }
 
         [XmlIgnore]
@@ -1438,7 +1438,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printobjectSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         public LeftRight location { get; set; }
 
         [XmlIgnore]
@@ -1541,13 +1541,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool bracketdegreesSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "halign")]
         public LeftCenterRight halign { get; set; }
 
         [XmlIgnore]
         public bool halignSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "valign")]
         public VAlign valign { get; set; }
 
         [XmlIgnore]
@@ -1693,7 +1693,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printobjectSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         public LeftRight location { get; set; }
 
         [XmlIgnore]
@@ -1769,7 +1769,7 @@ namespace MusicXMLUtils
         [XmlElement(DataType = "positiveInteger")]
         public string staff { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public HarmonyType type { get; set; }
 
         [XmlIgnore]
@@ -1787,7 +1787,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printframeSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -1801,7 +1801,7 @@ namespace MusicXMLUtils
     [XmlType("offset")]
     public class Offset
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "sound")]
         public YesNo sound { get; set; }
 
         [XmlIgnore]
@@ -1839,7 +1839,7 @@ namespace MusicXMLUtils
         [XmlElement("slash-dot")]
         public Empty[] slashdot { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute("use-dots")]
@@ -1925,7 +1925,7 @@ namespace MusicXMLUtils
         [XmlElement("slash-dot")]
         public Empty[] slashdot { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -1945,7 +1945,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "measure-repeat")]
     public class MeasureRepeat
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -2157,13 +2157,13 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "additional")]
         public YesNo additional { get; set; }
 
         [XmlIgnore]
         public bool additionalSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "size")]
         public SymbolSize size { get; set; }
 
         [XmlIgnore]
@@ -2289,13 +2289,13 @@ namespace MusicXMLUtils
         [XmlElement("beat-type")]
         public string[] beattype { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "symbol")]
         public TimeSymbol symbol { get; set; }
 
         [XmlIgnore]
         public bool symbolSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "separator")]
         public TimeSeparator separator { get; set; }
 
         [XmlIgnore]
@@ -2392,13 +2392,13 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "symbol")]
         public TimeSymbol symbol { get; set; }
 
         [XmlIgnore]
         public bool symbolSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "separator")]
         public TimeSeparator separator { get; set; }
 
         [XmlIgnore]
@@ -2439,7 +2439,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "cancel")]
         public YesNo cancel { get; set; }
 
         [XmlIgnore]
@@ -2456,7 +2456,7 @@ namespace MusicXMLUtils
     [XmlType("cancel")]
     public class Cancel
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         public CancelLocation location { get; set; }
 
         [XmlIgnore]
@@ -2621,19 +2621,19 @@ namespace MusicXMLUtils
         [XmlElement("offset")]
         public Offset offset { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "tempo")]
         public decimal tempo { get; set; }
 
         [XmlIgnore]
         public bool tempoSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "dynamics")]
         public decimal dynamics { get; set; }
 
         [XmlIgnore]
         public bool dynamicsSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "dacapo")]
         public YesNo dacapo { get; set; }
 
         [XmlIgnore]
@@ -2651,7 +2651,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string tocoda { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "divisions")]
         public decimal divisions { get; set; }
 
         [XmlIgnore]
@@ -2669,19 +2669,19 @@ namespace MusicXMLUtils
         [XmlAttribute("time-only", DataType = "token")]
         public string timeonly { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "pizzicato")]
         public YesNo pizzicato { get; set; }
 
         [XmlIgnore]
         public bool pizzicatoSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "pan")]
         public decimal pan { get; set; }
 
         [XmlIgnore]
         public bool panSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "elevation")]
         public decimal elevation { get; set; }
 
         [XmlIgnore]
@@ -2894,7 +2894,7 @@ namespace MusicXMLUtils
         [XmlElement("stick-material")]
         public StickMaterial stickmaterial { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "tip")]
         public TipDirection tip { get; set; }
 
         [XmlIgnore]
@@ -2980,7 +2980,7 @@ namespace MusicXMLUtils
     [XmlType("beater")]
     public class Beater
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "tip")]
         public TipDirection tip { get; set; }
 
         [XmlIgnore]
@@ -3067,7 +3067,7 @@ namespace MusicXMLUtils
         [XmlElement("wood", typeof(Wood))]
         public object Item { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "enclosure")]
         public EnclosureShape enclosure { get; set; }
 
         [XmlIgnore]
@@ -3395,10 +3395,10 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "principal-voice")]
     public class PrincipalVoice
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "symbol")]
         public PrincipalVoiceSymbol symbol { get; set; }
 
         [XmlText]
@@ -3464,7 +3464,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "string-mute")]
     public class StringMute
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public OnOff type { get; set; }
     }
 
@@ -3517,7 +3517,7 @@ namespace MusicXMLUtils
             this.size = "8";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public UpDownStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -3626,10 +3626,10 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "metronome-tuplet")]
     public class MetronomeTuplet : TimeModification
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "bracket")]
         public YesNo bracket { get; set; }
 
         [XmlIgnore]
@@ -3721,13 +3721,13 @@ namespace MusicXMLUtils
         [XmlElement("per-minute", typeof(PerMinute))]
         public object[] Items { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "justify")]
         public LeftCenterRight justify { get; set; }
 
         [XmlIgnore]
         public bool justifySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "parentheses")]
         public YesNo parentheses { get; set; }
 
         [XmlIgnore]
@@ -3741,16 +3741,16 @@ namespace MusicXMLUtils
     [XmlType("pedal")]
     public class Pedal
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopChangeContinue type { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "line")]
         public YesNo line { get; set; }
 
         [XmlIgnore]
         public bool lineSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "sign")]
         public YesNo sign { get; set; }
 
         [XmlIgnore]
@@ -3782,7 +3782,7 @@ namespace MusicXMLUtils
     [XmlType("bracket")]
     public class Bracket
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -3889,7 +3889,7 @@ namespace MusicXMLUtils
     [XmlType("dashes")]
     public class Dashes
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -3942,19 +3942,19 @@ namespace MusicXMLUtils
     [XmlType("wedge")]
     public class Wedge
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public WedgeType type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "spread")]
         public decimal spread { get; set; }
 
         [XmlIgnore]
         public bool spreadSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "niente")]
         public YesNo niente { get; set; }
 
         [XmlIgnore]
@@ -4099,7 +4099,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public ItemsChoiceType5[] ItemsElementName { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4114,7 +4114,7 @@ namespace MusicXMLUtils
         [XmlAttribute("line-through", DataType = "nonNegativeInteger")]
         public string linethrough { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "enclosure")]
         public EnclosureShape enclosure { get; set; }
 
         [XmlIgnore]
@@ -4313,13 +4313,13 @@ namespace MusicXMLUtils
         [XmlElement("sound")]
         public Sound sound { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
         public bool placementSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "directive")]
         public YesNo directive { get; set; }
 
         [XmlIgnore]
@@ -4403,7 +4403,7 @@ namespace MusicXMLUtils
         [XmlAttribute("line-through", DataType = "nonNegativeInteger")]
         public string linethrough { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "rotation")]
         public decimal rotation { get; set; }
 
         [XmlIgnore]
@@ -4415,7 +4415,7 @@ namespace MusicXMLUtils
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string lang { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "dir")]
         public TextDirection dir { get; set; }
 
         [XmlIgnore]
@@ -4480,7 +4480,7 @@ namespace MusicXMLUtils
         [XmlAttribute("line-through", DataType = "nonNegativeInteger")]
         public string linethrough { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "rotation")]
         public decimal rotation { get; set; }
 
         [XmlIgnore]
@@ -4492,7 +4492,7 @@ namespace MusicXMLUtils
         [XmlAttribute(Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string lang { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "dir")]
         public TextDirection dir { get; set; }
 
         [XmlIgnore]
@@ -4540,7 +4540,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string name { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "justify")]
         public LeftCenterRight justify { get; set; }
 
         [XmlIgnore]
@@ -4570,7 +4570,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4640,7 +4640,7 @@ namespace MusicXMLUtils
             this.number = "1";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopSingle type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -4653,7 +4653,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printobjectSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4670,7 +4670,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "non-arpeggiate")]
     public class NonArpeggiate
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public TopBottom type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -4700,7 +4700,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4732,7 +4732,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "direction")]
         public UpDown direction { get; set; }
 
         [XmlIgnore]
@@ -4762,7 +4762,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4824,7 +4824,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "empty-placement")]
     public class EmptyPlacement
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4843,7 +4843,7 @@ namespace MusicXMLUtils
             this.type = UpDown.Up;
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         [DefaultValue(UpDown.Up)]
         public UpDown type { get; set; }
     }
@@ -4855,7 +4855,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "heel-toe")]
     public class HeelToe : EmptyPlacement
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "substitution")]
         public YesNo substitution { get; set; }
 
         [XmlIgnore]
@@ -4869,7 +4869,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "breath-mark")]
     public class BreathMark
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4925,7 +4925,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool spacelengthSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -4951,7 +4951,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "placement-text")]
     public class PlacementText
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5066,7 +5066,7 @@ namespace MusicXMLUtils
         [XmlElement("circular-arrow", typeof(CircularArrow))]
         public object[] Items { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5178,13 +5178,13 @@ namespace MusicXMLUtils
         [XmlElement("with-bar")]
         public PlacementText withbar { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "accelerate")]
         public YesNo accelerate { get; set; }
 
         [XmlIgnore]
         public bool accelerateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "beats")]
         public decimal beats { get; set; }
 
         [XmlIgnore]
@@ -5227,14 +5227,14 @@ namespace MusicXMLUtils
             this.number = "1";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
         [DefaultValue("1")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5251,7 +5251,7 @@ namespace MusicXMLUtils
     [XmlType("handbell")]
     public class Handbell
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5330,7 +5330,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printobjectSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5380,7 +5380,7 @@ namespace MusicXMLUtils
         [XmlElement("hole-shape")]
         public string holeshape { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5394,7 +5394,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "hole-closed")]
     public class HoleClosed
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "location")]
         public HoleClosedLocation location { get; set; }
 
         [XmlIgnore]
@@ -5522,7 +5522,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "accidental-mark")]
     public class AccidentalMark
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5544,11 +5544,11 @@ namespace MusicXMLUtils
             this.type = StartStopSingle.Single;
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         [DefaultValue(StartStopSingle.Single)]
         public StartStopSingle type { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5565,7 +5565,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "horizontal-turn")]
     public class HorizontalTurn
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5589,13 +5589,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool twonoteturnSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "accelerate")]
         public YesNo accelerate { get; set; }
 
         [XmlIgnore]
         public bool accelerateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "beats")]
         public decimal beats { get; set; }
 
         [XmlIgnore]
@@ -5613,7 +5613,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool lastbeatSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "slash")]
         public YesNo slash { get; set; }
 
         [XmlIgnore]
@@ -5628,7 +5628,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "empty-trill-sound")]
     public class EmptyTrillSound
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -5652,13 +5652,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool twonoteturnSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "accelerate")]
         public YesNo accelerate { get; set; }
 
         [XmlIgnore]
         public bool accelerateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "beats")]
         public decimal beats { get; set; }
 
         [XmlIgnore]
@@ -5684,19 +5684,19 @@ namespace MusicXMLUtils
     [XmlType("mordent")]
     public class Mordent : EmptyTrillSound
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "long")]
         public YesNo @long { get; set; }
 
         [XmlIgnore]
         public bool longSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "approach")]
         public AboveBelow approach { get; set; }
 
         [XmlIgnore]
         public bool approachSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "departure")]
         public AboveBelow departure { get; set; }
 
         [XmlIgnore]
@@ -5791,7 +5791,7 @@ namespace MusicXMLUtils
             this.number = "1";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -5816,13 +5816,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool spacelengthSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "accelerate")]
         public YesNo accelerate { get; set; }
 
         [XmlIgnore]
         public bool accelerateSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "beats")]
         public decimal beats { get; set; }
 
         [XmlIgnore]
@@ -5856,7 +5856,7 @@ namespace MusicXMLUtils
             this.number = "1";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -6008,13 +6008,13 @@ namespace MusicXMLUtils
         [XmlElement("tuplet-normal")]
         public TupletPortion tupletnormal { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "bracket")]
         public YesNo bracket { get; set; }
 
         [XmlIgnore]
@@ -6062,7 +6062,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
@@ -6081,7 +6081,7 @@ namespace MusicXMLUtils
             this.number = "1";
         }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -6130,13 +6130,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
         public bool placementSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "orientation")]
         public OverUnder orientation { get; set; }
 
         [XmlIgnore]
@@ -6201,7 +6201,7 @@ namespace MusicXMLUtils
     [XmlType("tied")]
     public class Tied
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStopContinue type { get; set; }
 
         [XmlAttribute(DataType = "positiveInteger")]
@@ -6249,13 +6249,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool relativeySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "placement")]
         public AboveBelow placement { get; set; }
 
         [XmlIgnore]
         public bool placementSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "orientation")]
         public OverUnder orientation { get; set; }
 
         [XmlIgnore]
@@ -6353,13 +6353,13 @@ namespace MusicXMLUtils
         [DefaultValue("1")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "repeater")]
         public YesNo repeater { get; set; }
 
         [XmlIgnore]
         public bool repeaterSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "fan")]
         public Fan fan { get; set; }
 
         [XmlIgnore]
@@ -6406,13 +6406,13 @@ namespace MusicXMLUtils
     [XmlType("notehead")]
     public class Notehead
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "filled")]
         public YesNo filled { get; set; }
 
         [XmlIgnore]
         public bool filledSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "parentheses")]
         public YesNo parentheses { get; set; }
 
         [XmlIgnore]
@@ -6590,31 +6590,31 @@ namespace MusicXMLUtils
     [XmlType("accidental")]
     public class Accidental
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "cautionary")]
         public YesNo cautionary { get; set; }
 
         [XmlIgnore]
         public bool cautionarySpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "editorial")]
         public YesNo editorial { get; set; }
 
         [XmlIgnore]
         public bool editorialSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "parentheses")]
         public YesNo parentheses { get; set; }
 
         [XmlIgnore]
         public bool parenthesesSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "bracket")]
         public YesNo bracket { get; set; }
 
         [XmlIgnore]
         public bool bracketSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "size")]
         public SymbolSize size { get; set; }
 
         [XmlIgnore]
@@ -6631,7 +6631,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "note-type")]
     public class NoteType
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "size")]
         public SymbolSize size { get; set; }
 
         [XmlIgnore]
@@ -6659,7 +6659,7 @@ namespace MusicXMLUtils
     [XmlType("tie")]
     public class Tie
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute("time-only", DataType = "token")]
@@ -6679,7 +6679,7 @@ namespace MusicXMLUtils
         [XmlElement("display-octave", DataType = "integer")]
         public string displayoctave { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "measure")]
         public YesNo measure { get; set; }
 
         [XmlIgnore]
@@ -6745,7 +6745,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool maketimeSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "slash")]
         public YesNo slash { get; set; }
 
         [XmlIgnore]
@@ -6879,7 +6879,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool printlyricSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "dynamics")]
         public decimal dynamics { get; set; }
 
         [XmlIgnore]
@@ -6891,13 +6891,13 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool enddynamicsSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "attack")]
         public decimal attack { get; set; }
 
         [XmlIgnore]
         public bool attackSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "release")]
         public decimal release { get; set; }
 
         [XmlIgnore]
@@ -6906,7 +6906,7 @@ namespace MusicXMLUtils
         [XmlAttribute("time-only", DataType = "token")]
         public string timeonly { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "pizzicato")]
         public YesNo pizzicato { get; set; }
 
         [XmlIgnore]
@@ -7100,7 +7100,7 @@ namespace MusicXMLUtils
     [XmlType("supports")]
     public class Supports
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public YesNo type { get; set; }
 
         [XmlAttribute(DataType = "NMTOKEN")]
@@ -7265,7 +7265,7 @@ namespace MusicXMLUtils
         [XmlElement("level")]
         public Level level { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public StartStop type { get; set; }
 
         [XmlAttribute(DataType = "token")]
@@ -7518,7 +7518,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "note-size")]
     public class NoteSize
     {
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "type")]
         public NoteSizeType type { get; set; }
 
         [XmlText]
@@ -7660,7 +7660,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "implicit")]
         public YesNo @implicit { get; set; }
 
         [XmlIgnore]
@@ -7672,7 +7672,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool noncontrollingSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "width")]
         public decimal width { get; set; }
 
         [XmlIgnore]
@@ -7734,7 +7734,7 @@ namespace MusicXMLUtils
         [XmlAttribute(DataType = "token")]
         public string number { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "implicit")]
         public YesNo @implicit { get; set; }
 
         [XmlIgnore]
@@ -7746,7 +7746,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool noncontrollingSpecified { get; set; }
 
-        [XmlAttribute]
+        [XmlAttribute(AttributeName = "width")]
         public decimal width { get; set; }
 
         [XmlIgnore]
