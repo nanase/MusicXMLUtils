@@ -7056,7 +7056,7 @@ namespace MusicXMLUtils
         [XmlElement("relation")]
         public TypedText[] Relation { get; set; }
 
-        [XmlArrayItemAttribute("miscellaneous", IsNullable = false)]
+        [XmlArrayItem("miscellaneous", IsNullable = false)]
         public MiscellaneousField[] Miscellaneous { get; set; }
     }
 
