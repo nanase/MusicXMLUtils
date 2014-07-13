@@ -37,6 +37,7 @@ namespace MusicXMLUtils
         [XmlElement("work-title")]
         public string worktitle { get; set; }
 
+        [XmlElement("opus")]
         public Opus opus { get; set; }
     }    
 
@@ -231,22 +232,28 @@ namespace MusicXMLUtils
         [XmlElement("bar-style")]
         public BarStyleColor barstyle { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlElement("wavy-line")]
         public WavyLine wavyline { get; set; }
 
+        [XmlElement("segno")]
         public EmptyPrintStyleAlign segno { get; set; }
 
+        [XmlElement("coda")]
         public EmptyPrintStyleAlign coda { get; set; }
 
         [XmlElement("fermata")]
         public Fermata[] fermata { get; set; }
 
+        [XmlElement("ending")]
         public Ending ending { get; set; }
 
+        [XmlElement("repeat")]
         public Repeat repeat { get; set; }
 
         [XmlAttribute]
@@ -951,13 +958,16 @@ namespace MusicXMLUtils
     [XmlType("figure")]
     public class Figure
     {
+        [XmlElement("prefix")]
         public StyleText prefix { get; set; }
 
         [XmlElement("figure-number")]
         public StyleText figurenumber { get; set; }
 
+        [XmlElement("suffix")]
         public StyleText suffix { get; set; }
 
+        [XmlElement("extend")]
         public Extend extend { get; set; }
     }
 
@@ -996,10 +1006,13 @@ namespace MusicXMLUtils
         [XmlElement("figure")]
         public Figure[] figure { get; set; }
 
+        [XmlElement("duration")]
         public decimal duration { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlAttribute("print-dot")]
@@ -1056,10 +1069,13 @@ namespace MusicXMLUtils
     {
         public String @string { get; set; }
 
+        [XmlElement("fret")]
         public Fret fret { get; set; }
 
+        [XmlElement("fingering")]
         public Fingering fingering { get; set; }
 
+        [XmlElement("barre")]
         public Barre barre { get; set; }
     }
 
@@ -1738,12 +1754,16 @@ namespace MusicXMLUtils
         [XmlElement("degree")]
         public Degree[] degree { get; set; }
 
+        [XmlElement("frame")]
         public Frame frame { get; set; }
 
+        [XmlElement("offset")]
         public Offset offset { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlElement(DataType = "positiveInteger")]
@@ -2000,6 +2020,7 @@ namespace MusicXMLUtils
         [XmlElement(DataType = "integer")]
         public string diatonic { get; set; }
 
+        [XmlElement("chromatic")]
         public decimal chromatic { get; set; }
 
         [XmlElement("octave-change", DataType = "integer")]
@@ -2124,6 +2145,7 @@ namespace MusicXMLUtils
     [XmlType("clef")]
     public class Clef
     {
+        [XmlElement("sign")]
         public ClefSign sign { get; set; }
 
         [XmlElement(DataType = "integer")]
@@ -2523,10 +2545,13 @@ namespace MusicXMLUtils
     [XmlType("attributes")]
     public class Attributes
     {
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
+        [XmlElement("divisions")]
         public decimal divisions { get; set; }
 
         [XmlIgnore]
@@ -2593,6 +2618,7 @@ namespace MusicXMLUtils
         [XmlElement("play")]
         public Play[] play { get; set; }
 
+        [XmlElement("offset")]
         public Offset offset { get; set; }
 
         [XmlAttribute]
@@ -2710,16 +2736,19 @@ namespace MusicXMLUtils
         [XmlElement("midi-unpitched", DataType = "positiveInteger")]
         public string midiunpitched { get; set; }
 
+        [XmlElement("volume")]
         public decimal volume { get; set; }
 
         [XmlIgnore]
         public bool volumeSpecified { get; set; }
 
+        [XmlElement("pan")]
         public decimal pan { get; set; }
 
         [XmlIgnore]
         public bool panSpecified { get; set; }
 
+        [XmlElement("elevation")]
         public decimal elevation { get; set; }
 
         [XmlIgnore]
@@ -4266,17 +4295,22 @@ namespace MusicXMLUtils
         [XmlElement("direction-type")]
         public DirectionType[] directiontype { get; set; }
 
+        [XmlElement("offset")]
         public Offset offset { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
+        [XmlElement("voice")]
         public string voice { get; set; }
 
         [XmlElement(DataType = "positiveInteger")]
         public string staff { get; set; }
 
+        [XmlElement("sound")]
         public Sound sound { get; set; }
 
         [XmlAttribute]
@@ -4299,12 +4333,16 @@ namespace MusicXMLUtils
     [XmlType("forward")]
     public class Forward
     {
+        [XmlElement("duration")]
         public decimal duration { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
+        [XmlElement("voice")]
         public string voice { get; set; }
 
         [XmlElement(DataType = "positiveInteger")]
@@ -4318,10 +4356,13 @@ namespace MusicXMLUtils
     [XmlType("backup")]
     public class Backup
     {
+        [XmlElement("duration")]
         public decimal duration { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
     }
 
@@ -4487,8 +4528,10 @@ namespace MusicXMLUtils
         [XmlElement("end-paragraph")]
         public Empty endparagraph { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlAttribute(DataType = "NMTOKEN")]
@@ -6265,8 +6308,10 @@ namespace MusicXMLUtils
     [XmlType("notations")]
     public class Notations
     {
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlElement("accidental-mark", typeof(AccidentalMark))]
@@ -6662,8 +6707,10 @@ namespace MusicXMLUtils
     [XmlType("pitch")]
     public class Pitch
     {
+        [XmlElement("step")]
         public Step step { get; set; }
 
+        [XmlElement("alter")]
         public decimal alter { get; set; }
 
         [XmlIgnore]
@@ -6727,26 +6774,34 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public ItemsChoiceType1[] ItemsElementName { get; set; }
 
+        [XmlElement("instrument")]
         public Instrument instrument { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
+        [XmlElement("voice")]
         public string voice { get; set; }
 
+        [XmlElement("type")]
         public NoteType type { get; set; }
 
         [XmlElement("dot")]
         public EmptyPlacement[] dot { get; set; }
 
+        [XmlElement("accidental")]
         public Accidental accidental { get; set; }
 
         [XmlElement("time-modification")]
         public TimeModification timemodification { get; set; }
 
+        [XmlElement("stem")]
         public Stem stem { get; set; }
 
+        [XmlElement("notehead")]
         public Notehead notehead { get; set; }
 
         [XmlElement("notehead-text")]
@@ -6764,6 +6819,7 @@ namespace MusicXMLUtils
         [XmlElement("lyric")]
         public Lyric[] lyric { get; set; }
 
+        [XmlElement("play")]
         public Play play { get; set; }
 
         [XmlAttribute("default-x")]
@@ -6946,6 +7002,7 @@ namespace MusicXMLUtils
     [XmlType(TypeName = "score-part")]
     public class ScorePart
     {
+        [XmlElement("identification")]
         public Identification identification { get; set; }
 
         [XmlElement("part-name")]
@@ -6989,8 +7046,10 @@ namespace MusicXMLUtils
         [XmlElement("rights")]
         public TypedText[] rights { get; set; }
 
+        [XmlElement("encoding")]
         public Encoding encoding { get; set; }
 
+        [XmlElement("source")]
         public string source { get; set; }
 
         [XmlElement("relation")]
@@ -7200,8 +7259,10 @@ namespace MusicXMLUtils
         [XmlElement("group-time")]
         public Empty grouptime { get; set; }
 
+        [XmlElement("footnote")]
         public FormattedText footnote { get; set; }
 
+        [XmlElement("level")]
         public Level level { get; set; }
 
         [XmlAttribute]
@@ -7518,8 +7579,10 @@ namespace MusicXMLUtils
     [XmlType("scaling")]
     public class Scaling
     {
+        [XmlElement("millimeters")]
         public decimal millimeters { get; set; }
 
+        [XmlElement("tenths")]
         public decimal tenths { get; set; }
     }
 
@@ -7530,6 +7593,7 @@ namespace MusicXMLUtils
     [XmlType("defaults")]
     public class Defaults
     {
+        [XmlElement("scaling")]
         public Scaling scaling { get; set; }
 
         [XmlElement("page-layout")]
@@ -7541,6 +7605,7 @@ namespace MusicXMLUtils
         [XmlElement("staff-layout")]
         public StaffLayout[] stafflayout { get; set; }
 
+        [XmlElement("appearance")]
         public Appearance appearance { get; set; }
 
         [XmlElement("music-font")]
@@ -7627,6 +7692,7 @@ namespace MusicXMLUtils
             this.version = "1.0";
         }
 
+        [XmlElement("work")]
         public Work work { get; set; }
 
         [XmlElement("movement-number")]
@@ -7635,8 +7701,10 @@ namespace MusicXMLUtils
         [XmlElement("movement-title")]
         public string movementtitle { get; set; }
 
+        [XmlElement("identification")]
         public Identification identification { get; set; }
 
+        [XmlElement("defaults")]
         public Defaults defaults { get; set; }
 
         [XmlElement("credit")]
