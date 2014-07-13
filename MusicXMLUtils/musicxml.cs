@@ -16,7 +16,6 @@ using System;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
