@@ -6085,7 +6085,7 @@ namespace MusicXMLUtils
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
-        [XmlAttribute(DataType = "positiveInteger")]
+        [XmlAttribute("number", DataType = "positiveInteger")]
         [DefaultValue("1")]
         public string Number { get; set; }
 
