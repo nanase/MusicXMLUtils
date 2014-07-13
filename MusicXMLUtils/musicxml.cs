@@ -5621,7 +5621,7 @@ namespace MusicXMLUtils
         public bool SlashSpecified { get; set; }
     }
 
-    [XmlIncludeAttribute(typeof(Mordent))]
+    [XmlInclude(typeof(Mordent))]
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
     [DebuggerStepThrough]
