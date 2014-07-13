@@ -1092,7 +1092,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
 
-        [XmlTextAttribute(DataType = "positiveInteger")]
+        [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
     }
 
@@ -1124,7 +1124,7 @@ namespace MusicXMLUtils
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
 
-        [XmlTextAttribute(DataType = "nonNegativeInteger")]
+        [XmlText(DataType = "nonNegativeInteger")]
         public string Value { get; set; }
     }
 
@@ -1197,7 +1197,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool LocationSpecified { get; set; }
 
-        [XmlTextAttribute(DataType = "positiveInteger")]
+        [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
     }
 
@@ -1377,7 +1377,7 @@ namespace MusicXMLUtils
         [XmlAttribute("text", DataType = "token")]
         public string Text { get; set; }
 
-        [XmlTextAttribute(DataType = "positiveInteger")]
+        [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
     }
 
@@ -1503,7 +1503,7 @@ namespace MusicXMLUtils
     [XmlType("inversion")]
     public class Inversion
     {
-        [XmlTextAttribute(DataType = "nonNegativeInteger")]
+        [XmlText(DataType = "nonNegativeInteger")]
         public string Value { get; set; }
     }
 
@@ -2446,7 +2446,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool CancelSpecified { get; set; }
 
-        [XmlTextAttribute(DataType = "integer")]
+        [XmlText(DataType = "integer")]
         public string Value { get; set; }
     }
 
@@ -2463,7 +2463,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool LocationSpecified { get; set; }
 
-        [XmlTextAttribute(DataType = "integer")]
+        [XmlText(DataType = "integer")]
         public string Value { get; set; }
     }
 
@@ -5555,7 +5555,7 @@ namespace MusicXMLUtils
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
 
-        [XmlTextAttribute(DataType = "integer")]
+        [XmlText(DataType = "integer")]
         public string Value { get; set; }
     }
 
@@ -5975,7 +5975,7 @@ namespace MusicXMLUtils
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
 
-        [XmlTextAttribute(DataType = "nonNegativeInteger")]
+        [XmlText(DataType = "nonNegativeInteger")]
         public string Value { get; set; }
     }
 
