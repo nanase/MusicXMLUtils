@@ -7690,7 +7690,7 @@ namespace MusicXMLUtils
     {
         public ScoreTimewise()
         {
-            this.Version = "1.0";
+            this.Version = "3.0";
         }
 
         [XmlElement("work")]
@@ -7718,7 +7718,7 @@ namespace MusicXMLUtils
         public ScoreTimewiseMeasure[] Measure { get; set; }
 
         [XmlAttribute("version", DataType = "token")]
-        [DefaultValue("1.0")]
+        [DefaultValue("3.0")]
         public string Version { get; set; }
     }
 
