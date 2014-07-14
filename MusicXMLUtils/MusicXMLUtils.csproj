@@ -39,7 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="musicxml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structure\AboveBelow.cs" />
     <Compile Include="Structure\Note\Accidental\Accidental.cs" />
