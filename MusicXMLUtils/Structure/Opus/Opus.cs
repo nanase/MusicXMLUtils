@@ -30,7 +30,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace MusicXMLUtils.Structure.Opus
+namespace MusicXMLUtils.Structure
 {
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]

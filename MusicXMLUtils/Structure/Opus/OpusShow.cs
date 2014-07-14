@@ -26,7 +26,7 @@ using System;
 using System.CodeDom.Compiler;
 using System.Xml.Serialization;
 
-namespace MusicXMLUtils.Structure.Opus
+namespace MusicXMLUtils.Structure
 {
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
