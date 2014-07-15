@@ -96,6 +96,7 @@
     <Compile Include="Structure\Defaults\EmptyFont.cs" />
     <Compile Include="Structure\Note\Notations\EmptyLine.cs" />
     <Compile Include="Structure\Note\EmptyPlacement.cs" />
+    <Compile Include="Structure\Score\Partwise\ScorePartwise.cs" />
     <Compile Include="Structure\System\EmptyPrintObjectStyleAlign.cs" />
     <Compile Include="Structure\EmptyPrintStyleAlign.cs" />
     <Compile Include="Structure\Note\Notations\Ornaments\EmptyTrillSound.cs" />
@@ -244,12 +245,11 @@
     <Compile Include="Structure\Direction\Scordatura.cs" />
     <Compile Include="Structure\ScoreInstrument.cs" />
     <Compile Include="Structure\ScorePart.cs" />
-    <Compile Include="Structure\Partwise\ScorePartwise.cs" />
-    <Compile Include="Structure\Partwise\ScorePartwisePart.cs" />
-    <Compile Include="Structure\Partwise\ScorePartwisePartMeasure.cs" />
-    <Compile Include="Structure\Timewise\ScoreTimewise.cs" />
-    <Compile Include="Structure\Timewise\ScoreTimewiseMeasure.cs" />
-    <Compile Include="Structure\Timewise\ScoreTimewiseMeasurePart.cs" />
+    <Compile Include="Structure\Score\Partwise\ScorePartwisePart.cs" />
+    <Compile Include="Structure\Score\Partwise\ScorePartwisePartMeasure.cs" />
+    <Compile Include="Structure\Score\Timewise\ScoreTimewise.cs" />
+    <Compile Include="Structure\Score\Timewise\ScoreTimewiseMeasure.cs" />
+    <Compile Include="Structure\Score\Timewise\ScoreTimewiseMeasurePart.cs" />
     <Compile Include="Structure\Play\SemiPitched.cs" />
     <Compile Include="Structure\Staff\ShowFrets.cs" />
     <Compile Include="Structure\ShowTuplet.cs" />

@@ -37,39 +37,24 @@ namespace MusicXMLUtils.Structure
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
     [XmlRoot("score-timewise", Namespace = "", IsNullable = false)]
-    public class ScoreTimewise
+    public class ScoreTimewise : ScoreBase<ScoreTimewise>
     {
-        public ScoreTimewise()
-        {
-            this.Version = "3.0";
-        }
-
-        [XmlElement("work")]
-        public Work Work { get; set; }
-
-        [XmlElement("movement-number")]
-        public string MovementNumber { get; set; }
-
-        [XmlElement("movement-title")]
-        public string MovementTitle { get; set; }
-
-        [XmlElement("identification")]
-        public Identification Identification { get; set; }
-
-        [XmlElement("defaults")]
-        public Defaults Defaults { get; set; }
-
-        [XmlElement("credit")]
-        public Credit[] Credit { get; set; }
-
-        [XmlElement("part-list")]
-        public PartList PartList { get; set; }
-
         [XmlElement("measure")]
         public ScoreTimewiseMeasure[] Measure { get; set; }
 
-        [XmlAttribute("version", DataType = "token")]
-        [DefaultValue("3.0")]
-        public string Version { get; set; }
+        protected override string DocTypeName
+        {
+            get { return "score-timewise"; }
+        }
+
+        protected override string DocTypePubID
+        {
+            get { return "-//Recordare//DTD MusicXML 3.0 Timewise//EN"; }
+        }
+
+        protected override string DocTypeSysID
+        {
+            get { return "http://www.musicxml.org/dtds/timewise.dtd"; }
+        }
     }
 }
