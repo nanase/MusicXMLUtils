@@ -1,4 +1,4 @@
-﻿/* MusicXMLUtils / Structure and Implementation of the MusicXML 3.0 
+/* MusicXMLUtils / Structure and Implementation of the MusicXML 3.0 
 
 LICENSE - The MIT License (MIT)
 
@@ -28,33 +28,34 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml;
 using System.Xml.Serialization;
+using MusicXMLUtils.Structure;
 
-namespace MusicXMLUtils.Structure
+namespace MusicXMLUtils
 {
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true)]
-    [XmlRoot("score-partwise", Namespace = "", IsNullable = false)]
-    public class ScorePartwise : ScoreBase<ScorePartwise>
+    [XmlRoot("score-timewise", Namespace = "", IsNullable = false)]
+    public class ScoreTimewise : ScoreBase<ScoreTimewise>
     {
-        [XmlElement("part")]
-        public ScorePartwisePart[] Part { get; set; }
+        [XmlElement("measure")]
+        public ScoreTimewiseMeasure[] Measure { get; set; }
 
         protected override string DocTypeName
         {
-            get { return "score-partwise"; }
+            get { return "score-timewise"; }
         }
 
         protected override string DocTypePubID
         {
-            get { return "-//Recordare//DTD MusicXML 3.0 Partwise//EN"; }
+            get { return "-//Recordare//DTD MusicXML 3.0 Timewise//EN"; }
         }
 
         protected override string DocTypeSysID
         {
-            get { return "http://www.musicxml.org/dtds/partwise.dtd"; }
+            get { return "http://www.musicxml.org/dtds/timewise.dtd"; }
         }
     }
 }
