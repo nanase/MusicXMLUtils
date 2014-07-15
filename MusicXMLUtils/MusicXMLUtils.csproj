@@ -97,6 +97,7 @@
     <Compile Include="Structure\Note\Notations\EmptyLine.cs" />
     <Compile Include="Structure\Note\EmptyPlacement.cs" />
     <Compile Include="Structure\Score\Partwise\ScorePartwise.cs" />
+    <Compile Include="Structure\Score\ScoreBase.cs" />
     <Compile Include="Structure\System\EmptyPrintObjectStyleAlign.cs" />
     <Compile Include="Structure\EmptyPrintStyleAlign.cs" />
     <Compile Include="Structure\Note\Notations\Ornaments\EmptyTrillSound.cs" />
