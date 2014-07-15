@@ -40,14 +40,11 @@ namespace MusicXMLUtils.Structure
     [XmlRoot("score-partwise", Namespace = "", IsNullable = false)]
     public class ScorePartwise
     {
-        #region -- Constructors --
         public ScorePartwise()
         {
             this.Version = "3.0";
         }
-        #endregion
 
-        #region -- Public Properties --
         [XmlElement("work")]
         public Work Work { get; set; }
 
@@ -75,9 +72,7 @@ namespace MusicXMLUtils.Structure
         [XmlAttribute(DataType = "token")]
         [DefaultValue("3.0")]
         public string Version { get; set; }
-        #endregion
 
-        #region -- Public Static Methods --
         public static ScorePartwise Deserialize(string filepath)
         {
             // ソース出典:
@@ -113,6 +108,5 @@ namespace MusicXMLUtils.Structure
                 serializer.Serialize(writer, scorepartwise, nullSpace);
             }
         }
-        #endregion
     }
 }

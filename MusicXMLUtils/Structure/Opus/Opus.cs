@@ -39,16 +39,13 @@ namespace MusicXMLUtils.Structure
     [XmlType("opus")]
     public class Opus
     {
-        #region -- Constructors --
         public Opus()
         {
             this.Type = OpusType.Simple;
             this.Show = OpusShow.Replace;
             this.Actuate = OpusActuate.OnRequest;
         }
-        #endregion
 
-        #region -- Public Properties --
         [XmlAttribute(AttributeName = "href", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
         public string HRef { get; set; }
 
@@ -71,6 +68,5 @@ namespace MusicXMLUtils.Structure
         [XmlAttribute(AttributeName = "actuate", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
         [DefaultValue(OpusActuate.OnRequest)]
         public OpusActuate Actuate { get; set; }
-        #endregion
     }
 }
