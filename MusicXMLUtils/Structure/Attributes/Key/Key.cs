@@ -49,7 +49,7 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType8[] ItemsElementName { get; set; }
+        public KeyItem[] ItemsElementName { get; set; }
 
         [XmlElement("key-octave")]
         public KeyOctave[] KeyOctave { get; set; }
