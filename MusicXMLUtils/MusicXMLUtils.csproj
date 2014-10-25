@@ -151,7 +151,7 @@
     <Compile Include="Structure\Note\Notations\Technical\ItemChoiceType.cs" />
     <Compile Include="Structure\Note\Notations\Technical\ItemChoiceType1.cs" />
     <Compile Include="Structure\Identification\ItemsChoiceType.cs" />
-    <Compile Include="Structure\Note\ItemsChoiceType1.cs" />
+    <Compile Include="Structure\Note\NoteItem.cs" />
     <Compile Include="Structure\Note\Notations\Ornaments\ItemsChoiceType2.cs" />
     <Compile Include="Structure\Note\Notations\Technical\ItemsChoiceType3.cs" />
     <Compile Include="Structure\Note\Notations\ItemsChoiceType4.cs" />

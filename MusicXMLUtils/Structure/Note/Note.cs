@@ -51,7 +51,7 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType1[] ItemsElementName { get; set; }
+        public NoteItem[] ItemsElementName { get; set; }
 
         [XmlElement("instrument")]
         public Instrument Instrument { get; set; }
