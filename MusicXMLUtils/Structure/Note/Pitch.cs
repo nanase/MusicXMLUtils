@@ -49,5 +49,24 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("octave", DataType = "integer")]
         public string Octave { get; set; }
+
+        public Pitch()
+        {
+        }
+
+        public Pitch(Step step, string octave)
+        {
+            if (octave == null)
+                throw new ArgumentNullException("octave");
+
+            this.Step = step;
+            this.Octave = octave;
+        }
+
+        public Pitch(Step step, int octave)
+        {
+            this.Step = step;
+            this.Octave = octave.ToString();
+        }
     }
 }
