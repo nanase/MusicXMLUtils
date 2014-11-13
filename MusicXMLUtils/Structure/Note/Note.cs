@@ -190,5 +190,41 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PizzicatoSpecified { get; set; }
+
+        public Note()
+        {
+        }
+
+        public Note(string voise, NoteTypeValue noteTypeValue, StemValue stemValue)
+        {
+            if (voise == null)
+                throw new ArgumentNullException("voise");
+
+            this.Voice = voise;
+            this.Type = new NoteType(noteTypeValue);
+            this.Stem = new Stem(stemValue);
+        }
+
+        public Note(int voise, NoteTypeValue noteTypeValue, StemValue stemValue)
+        {
+            this.Voice = voise.ToString();
+            this.Type = new NoteType(noteTypeValue);
+            this.Stem = new Stem(stemValue);
+        }
+
+        public Note(string voise, NoteTypeValue noteTypeValue)
+        {
+            if (voise == null)
+                throw new ArgumentNullException("voise");
+
+            this.Voice = voise;
+            this.Type = new NoteType(noteTypeValue);
+        }
+
+        public Note(int voise, NoteTypeValue noteTypeValue)
+        {
+            this.Voice = voise.ToString();
+            this.Type = new NoteType(noteTypeValue);
+        }
     }
 }
