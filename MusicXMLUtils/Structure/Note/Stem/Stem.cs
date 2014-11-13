@@ -67,5 +67,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public StemValue Value { get; set; }
+
+        public Stem()
+        {
+        }
+
+        public Stem(StemValue value)
+        {
+            this.Value = value;
+        }
     }
 }
