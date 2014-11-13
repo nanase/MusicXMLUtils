@@ -73,5 +73,22 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool WidthSpecified { get; set; }
+
+        public ScorePartwisePartMeasure()
+        {
+        }
+
+        public ScorePartwisePartMeasure(string number)
+        {
+            if (number == null)
+                throw new ArgumentNullException("number");
+
+            this.Number = number;
+        }
+
+        public ScorePartwisePartMeasure(int number)
+        {
+            this.Number = number.ToString();
+        }
     }
 }
