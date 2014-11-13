@@ -43,5 +43,17 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+
+        public ScorePartwisePart()
+        {
+        }
+
+        public ScorePartwisePart(string id)
+        {
+            if (id == null)
+                throw new ArgumentNullException();
+
+            this.Id = id;
+        }
     }
 }
