@@ -73,5 +73,24 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+
+        public Clef()
+        {
+        }
+
+        public Clef(ClefSign sign, string line)
+        {
+            if (line == null)
+                throw new ArgumentNullException("line");
+
+            this.Sign = sign;
+            this.Line = line;
+        }
+
+        public Clef(ClefSign sign, int line)
+        {
+            this.Sign = sign;
+            this.Line = line.ToString();
+        }
     }
 }
