@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structure\AboveBelow.cs" />
+    <Compile Include="Structure\ItemHolder.cs" />
     <Compile Include="Structure\Note\Accidental\Accidental.cs" />
     <Compile Include="Structure\Note\Accidental\AccidentalMark.cs" />
     <Compile Include="Structure\Note\Accidental\AccidentalText.cs" />
