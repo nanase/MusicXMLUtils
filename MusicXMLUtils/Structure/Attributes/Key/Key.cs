@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("key")]
-    public class Key
+    public class Key : ItemHolder<KeyItem>
     {
         [XmlElement("cancel", typeof(Cancel))]
         [XmlElement("fifths", typeof(string), DataType = "integer")]
@@ -45,11 +45,11 @@ namespace MusicXMLUtils.Structure
         [XmlElement("key-step", typeof(Step))]
         [XmlElement("mode", typeof(string))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public KeyItem[] ItemsElementName { get; set; }
+        public override KeyItem[] ItemsElementName { get; set; }
 
         [XmlElement("key-octave")]
         public KeyOctave[] KeyOctave { get; set; }
