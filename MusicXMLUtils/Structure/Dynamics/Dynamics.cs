@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("dynamics")]
-    public class Dynamics
+    public class Dynamics : ItemHolder<ItemsChoiceType5>
     {
         [XmlElement("f", typeof(Empty))]
         [XmlElement("ff", typeof(Empty))]
@@ -63,11 +63,11 @@ namespace MusicXMLUtils.Structure
         [XmlElement("sfpp", typeof(Empty))]
         [XmlElement("sfz", typeof(Empty))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType5[] ItemsElementName { get; set; }
+        public override ItemsChoiceType5[] ItemsElementName { get; set; }
 
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
