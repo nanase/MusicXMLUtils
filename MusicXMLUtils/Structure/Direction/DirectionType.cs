@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType(TypeName = "direction-type")]
-    public class DirectionType
+    public class DirectionType : ItemHolder<ItemsChoiceType7>
     {
         [XmlElement("accordion-registration", typeof(AccordionRegistration))]
         [XmlElement("bracket", typeof(Bracket))]
@@ -61,10 +61,10 @@ namespace MusicXMLUtils.Structure
         [XmlElement("wedge", typeof(Wedge))]
         [XmlElement("words", typeof(FormattedText))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType7[] ItemsElementName { get; set; }
+        public override ItemsChoiceType7[] ItemsElementName { get; set; }
     }
 }
