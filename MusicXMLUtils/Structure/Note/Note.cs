@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("note")]
-    public class Note
+    public class Note : ItemHolder<NoteItem>
     {
         [XmlElement("chord", typeof(Empty))]
         [XmlElement("cue", typeof(Empty))]
@@ -47,11 +47,11 @@ namespace MusicXMLUtils.Structure
         [XmlElement("tie", typeof(Tie))]
         [XmlElement("unpitched", typeof(Unpitched))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public NoteItem[] ItemsElementName { get; set; }
+        public override NoteItem[] ItemsElementName { get; set; }
 
         [XmlElement("instrument")]
         public Instrument Instrument { get; set; }
