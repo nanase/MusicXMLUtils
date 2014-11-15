@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("ornaments")]
-    public class Ornaments
+    public class Ornaments : ItemHolder<ItemsChoiceType2>
     {
         [XmlElement("delayed-inverted-turn", typeof(HorizontalTurn))]
         [XmlElement("delayed-turn", typeof(HorizontalTurn))]
@@ -52,11 +52,11 @@ namespace MusicXMLUtils.Structure
         [XmlElement("vertical-turn", typeof(EmptyTrillSound))]
         [XmlElement("wavy-line", typeof(WavyLine))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType2[] ItemsElementName { get; set; }
+        public override ItemsChoiceType2[] ItemsElementName { get; set; }
 
         [XmlElement("accidental-mark")]
         public AccidentalMark[] AccidentalMark { get; set; }
