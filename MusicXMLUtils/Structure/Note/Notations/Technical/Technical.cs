@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("technical")]
-    public class Technical
+    public class Technical : ItemHolder<ItemsChoiceType3>
     {
         [XmlElement("arrow", typeof(Arrow))]
         [XmlElement("bend", typeof(Bend))]
@@ -63,10 +63,10 @@ namespace MusicXMLUtils.Structure
         [XmlElement("triple-tongue", typeof(EmptyPlacement))]
         [XmlElement("up-bow", typeof(EmptyPlacement))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType3[] ItemsElementName { get; set; }
+        public override ItemsChoiceType3[] ItemsElementName { get; set; }
     }
 }
