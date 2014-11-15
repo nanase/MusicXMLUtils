@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("articulations")]
-    public class Articulations
+    public class Articulations : ItemHolder<ItemsChoiceType4>
     {
         [XmlElement("accent", typeof(EmptyPlacement))]
         [XmlElement("breath-mark", typeof(BreathMark))]
@@ -55,10 +55,10 @@ namespace MusicXMLUtils.Structure
         [XmlElement("tenuto", typeof(EmptyPlacement))]
         [XmlElement("unstress", typeof(EmptyPlacement))]
         [XmlChoiceIdentifier("ItemsElementName")]
-        public object[] Items { get; set; }
+        public override object[] Items { get; set; }
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public ItemsChoiceType4[] ItemsElementName { get; set; }
+        public override ItemsChoiceType4[] ItemsElementName { get; set; }
     }
 }
