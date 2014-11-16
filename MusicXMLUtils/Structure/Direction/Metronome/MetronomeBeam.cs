@@ -38,16 +38,22 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "metronome-beam")]
     public class MetronomeBeam
     {
-        public MetronomeBeam()
-        {
-            this.Number = "1";
-        }
-
         [XmlAttribute("number", DataType = "positiveInteger")]
         [DefaultValue("1")]
         public string Number { get; set; }
 
         [XmlText]
         public BeamValue Value { get; set; }
+
+        public MetronomeBeam()
+        {
+            this.Number = "1";
+        }
+
+        public MetronomeBeam(BeamValue value)
+            : this()
+        {
+            this.Value = value;
+        }
     }
 }
