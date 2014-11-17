@@ -46,5 +46,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BeaterValue Value { get; set; }
+
+        public Beater()
+        {
+        }
+
+        public Beater(BeaterValue value)
+        {
+            this.Value = value;
+        }
     }
 }
