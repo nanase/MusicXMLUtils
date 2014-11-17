@@ -40,5 +40,14 @@ namespace MusicXMLUtils.Structure
     {
         [XmlText]
         public MeasureNumberingValue Value { get; set; }
+
+        public MeasureNumbering()
+        {
+        }
+
+        public MeasureNumbering(MeasureNumberingValue value)
+        {
+            this.Value = value;
+        }
     }
 }
