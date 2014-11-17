@@ -43,5 +43,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public DegreeTypeValue Value { get; set; }
+
+        public DegreeType()
+        {
+        }
+
+        public DegreeType(DegreeTypeValue value)
+        {
+            this.Value = value;
+        }
     }
 }
