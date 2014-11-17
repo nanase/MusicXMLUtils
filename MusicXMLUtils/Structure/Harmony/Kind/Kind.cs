@@ -79,5 +79,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public KindValue Value { get; set; }
+
+        public Kind()
+        {
+        }
+
+        public Kind(KindValue value)
+        {
+            this.Value = value;
+        }
     }
 }
