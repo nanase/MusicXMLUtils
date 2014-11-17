@@ -46,5 +46,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public AccidentalValue Value { get; set; }
+
+        public AccidentalMark()
+        {
+        }
+
+        public AccidentalMark(AccidentalValue value)
+        {
+            this.Value = value;
+        }
     }
 }
