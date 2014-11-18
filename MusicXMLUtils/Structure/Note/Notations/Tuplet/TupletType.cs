@@ -62,5 +62,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public NoteTypeValue Value { get; set; }
+
+        public TupletType()
+        {
+        }
+
+        public TupletType(NoteTypeValue value)
+        {
+            this.Value = value;
+        }
     }
 }
