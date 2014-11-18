@@ -46,5 +46,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public HandbellValue Value { get; set; }
+
+        public Handbell()
+        {
+        }
+
+        public Handbell(HandbellValue value)
+        {
+            this.Value = value;
+        }
     }
 }
