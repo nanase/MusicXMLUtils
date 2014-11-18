@@ -46,5 +46,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BreathMarkValue Value { get; set; }
+
+        public BreathMark()
+        {
+        }
+
+        public BreathMark(BreathMarkValue value)
+        {
+            this.Value = value;
+        }
     }
 }
