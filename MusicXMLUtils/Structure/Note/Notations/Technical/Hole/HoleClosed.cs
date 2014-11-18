@@ -46,5 +46,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public HoleClosedValue Value { get; set; }
+
+        public HoleClosed()
+        {
+        }
+
+        public HoleClosed(HoleClosedValue value)
+        {
+            this.Value = value;
+        }
     }
 }
