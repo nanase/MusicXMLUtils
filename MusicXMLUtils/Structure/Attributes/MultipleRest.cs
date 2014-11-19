@@ -46,5 +46,21 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+
+        public MultipleRest()
+        {
+        }
+
+        public MultipleRest(string value)
+        {
+            this.Value = value;
+        }
+
+        public MultipleRest(string value, YesNo useSymbols)
+        {
+            this.Value = value;
+            this.UseSymbols = useSymbols;
+            this.UseSymbolsSpecified = true;
+        }
     }
 }
