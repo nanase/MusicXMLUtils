@@ -43,5 +43,20 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BarStyle Value { get; set; }
+
+        public BarStyleColor()
+        {
+        }
+
+        public BarStyleColor(BarStyle value)
+        {
+            this.Value = value;
+        }
+
+        public BarStyleColor(BarStyle value, string color)
+        {
+            this.Value = value;
+            this.Color = color;
+        }
     }
 }
