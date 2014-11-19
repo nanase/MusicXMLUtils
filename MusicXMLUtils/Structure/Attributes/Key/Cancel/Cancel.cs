@@ -46,5 +46,21 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "integer")]
         public string Value { get; set; }
+
+        public Cancel()
+        {
+        }
+
+        public Cancel(string value)
+        {
+            this.Value = value;
+        }
+
+        public Cancel(string value, CancelLocation location)
+        {
+            this.Value = value;
+            this.Location = location;
+            this.LocationSpecified = true;
+        }
     }
 }
