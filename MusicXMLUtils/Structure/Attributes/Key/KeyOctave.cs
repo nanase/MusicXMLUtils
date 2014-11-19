@@ -49,5 +49,14 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "integer")]
         public string Value { get; set; }
+
+        public KeyOctave()
+        {
+        }
+
+        public KeyOctave(string value)
+        {
+            this.Value = value;
+        }
     }
 }
