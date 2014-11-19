@@ -44,5 +44,20 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+
+        public AttributesDirective()
+        {
+        }
+
+        public AttributesDirective(string value)
+        {
+            this.Value = value;
+        }
+
+        public AttributesDirective(string value, string lang)
+        {
+            this.Value = value;
+            this.Lang = lang;
+        }
     }
 }
