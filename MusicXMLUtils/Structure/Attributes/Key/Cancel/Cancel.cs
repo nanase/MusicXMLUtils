@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("cancel")]
     public class Cancel
     {
+        #region -- Public Properties --
         [XmlAttribute("location")]
         public CancelLocation Location { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "integer")]
         public string Value { get; set; }
+        #endregion
 
+        #region -- Constructor --
         public Cancel()
         {
         }
@@ -62,5 +65,6 @@ namespace MusicXMLUtils.Structure
             this.Location = location;
             this.LocationSpecified = true;
         }
+        #endregion
     }
 }
