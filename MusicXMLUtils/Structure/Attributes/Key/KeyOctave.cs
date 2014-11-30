@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "key-octave")]
     public class KeyOctave
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "positiveInteger")]
         public string Number { get; set; }
 
@@ -49,7 +50,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "integer")]
         public string Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public KeyOctave()
         {
         }
@@ -58,5 +61,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion        
     }
 }
