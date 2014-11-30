@@ -158,7 +158,7 @@
     <Compile Include="Structure\Note\Notations\ItemsChoiceType4.cs" />
     <Compile Include="Structure\Dynamics\ItemsChoiceType5.cs" />
     <Compile Include="Structure\Note\Lyric\ItemsChoiceType6.cs" />
-    <Compile Include="Structure\Direction\ItemsChoiceType7.cs" />
+    <Compile Include="Structure\Direction\DirectionTypeItem.cs" />
     <Compile Include="Structure\Attributes\Key\KeyItem.cs" />
     <Compile Include="Structure\Attributes\Time\TimeItem.cs" />
     <Compile Include="Structure\Attributes\Key\Key.cs" />
