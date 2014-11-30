@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("time")]
-    public class Time : ItemHolder<ItemsChoiceType9>
+    public class Time : ItemHolder<TimeItem>
     {
         [XmlElement("beat-type", typeof(string))]
         [XmlElement("beats", typeof(string))]
@@ -47,7 +47,7 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public override ItemsChoiceType9[] ItemsElementName { get; set; }
+        public override TimeItem[] ItemsElementName { get; set; }
 
         [XmlAttribute("number", DataType = "positiveInteger")]
         public string Number { get; set; }

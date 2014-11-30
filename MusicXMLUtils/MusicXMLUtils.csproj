@@ -160,7 +160,7 @@
     <Compile Include="Structure\Note\Lyric\ItemsChoiceType6.cs" />
     <Compile Include="Structure\Direction\ItemsChoiceType7.cs" />
     <Compile Include="Structure\Attributes\Key\KeyItem.cs" />
-    <Compile Include="Structure\Attributes\Time\ItemsChoiceType9.cs" />
+    <Compile Include="Structure\Attributes\Time\TimeItem.cs" />
     <Compile Include="Structure\Attributes\Key\Key.cs" />
     <Compile Include="Structure\Attributes\Key\KeyOctave.cs" />
     <Compile Include="Structure\Harmony\Kind\Kind.cs" />
