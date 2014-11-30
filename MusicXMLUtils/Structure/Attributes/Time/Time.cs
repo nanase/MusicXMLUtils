@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("time")]
     public class Time : ItemHolder<TimeItem>
     {
+        #region -- Public Properties --
         [XmlElement("beat-type", typeof(string))]
         [XmlElement("beats", typeof(string))]
         [XmlElement("interchangeable", typeof(Interchangeable))]
@@ -69,5 +70,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
