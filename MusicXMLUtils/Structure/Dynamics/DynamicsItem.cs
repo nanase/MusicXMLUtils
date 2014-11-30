@@ -31,7 +31,7 @@ namespace MusicXMLUtils.Structure
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
     [XmlType(IncludeInSchema = false)]
-    public enum ItemsChoiceType5
+    public enum DynamicsItem
     {
         [XmlEnum("f")]
         F,
