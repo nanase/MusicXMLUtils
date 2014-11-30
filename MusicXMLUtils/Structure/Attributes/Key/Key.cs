@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("key")]
     public class Key : ItemHolder<KeyItem>
     {
+        #region -- Public Properties --
         [XmlElement("cancel", typeof(Cancel))]
         [XmlElement("fifths", typeof(string), DataType = "integer")]
         [XmlElement("key-accidental", typeof(AccidentalValue))]
@@ -62,5 +63,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
