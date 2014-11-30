@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("interchangeable")]
     public class Interchangeable
     {
+        #region -- Public Properties --
         [XmlElement("time-relation")]
         public TimeRelation TimeRelation { get; set; }
 
@@ -61,5 +62,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool SeparatorSpecified { get; set; }
+        #endregion
     }
 }
