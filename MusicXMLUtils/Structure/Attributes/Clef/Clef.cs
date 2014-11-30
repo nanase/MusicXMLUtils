@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("clef")]
     public class Clef
     {
+        #region -- Public Properties --
         [XmlElement("sign")]
         public ClefSign Sign { get; set; }
 
@@ -73,7 +74,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
 
+        #region -- Public Constructors --
         public Clef()
         {
         }
@@ -92,5 +95,6 @@ namespace MusicXMLUtils.Structure
             this.Sign = sign;
             this.Line = line.ToString();
         }
+        #endregion
     }
 }
