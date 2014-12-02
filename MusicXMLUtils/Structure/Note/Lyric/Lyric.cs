@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("lyric")]
-    public class Lyric : ItemHolder<ItemsChoiceType6>
+    public class Lyric : ItemHolder<LyricItem>
     {
         [XmlElement("elision", typeof(TextFontColor))]
         [XmlElement("extend", typeof(Extend))]
@@ -49,7 +49,7 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public override ItemsChoiceType6[] ItemsElementName { get; set; }
+        public override LyricItem[] ItemsElementName { get; set; }
 
         [XmlElement("end-line")]
         public Empty EndLine { get; set; }

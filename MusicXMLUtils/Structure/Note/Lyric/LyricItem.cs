@@ -31,7 +31,7 @@ namespace MusicXMLUtils.Structure
     [GeneratedCode("xsd", "4.0.30319.18020")]
     [Serializable]
     [XmlType(IncludeInSchema = false)]
-    public enum ItemsChoiceType6
+    public enum LyricItem
     {
         [XmlEnum("elision")]
         Elision,
