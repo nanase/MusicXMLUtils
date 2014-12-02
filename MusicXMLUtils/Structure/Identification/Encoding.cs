@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("encoding")]
-    public class Encoding : ItemHolder<ItemsChoiceType>
+    public class Encoding : ItemHolder<EncodingItem>
     {
         [XmlElement("encoder", typeof(TypedText))]
         [XmlElement("encoding-date", typeof(System.DateTime), DataType = "date")]
@@ -48,6 +48,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public override ItemsChoiceType[] ItemsElementName { get; set; }
+        public override EncodingItem[] ItemsElementName { get; set; }
     }
 }
