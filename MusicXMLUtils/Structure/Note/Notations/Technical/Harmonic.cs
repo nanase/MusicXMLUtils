@@ -53,7 +53,7 @@ namespace MusicXMLUtils.Structure
         public Empty Item1 { get; set; }
 
         [XmlIgnore]
-        public Item1ChoiceType Item1ElementName { get; set; }
+        public HarmonicItem Item1ElementName { get; set; }
 
         [XmlAttribute("print-object")]
         public YesNo PrintObject { get; set; }

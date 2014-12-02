@@ -148,7 +148,7 @@
     <Compile Include="Structure\Note\Instrument.cs" />
     <Compile Include="Structure\Attributes\Time\Interchangeable.cs" />
     <Compile Include="Structure\Harmony\Inversion.cs" />
-    <Compile Include="Structure\Note\Notations\Technical\Item1ChoiceType.cs" />
+    <Compile Include="Structure\Note\Notations\Technical\HarmonicItem.cs" />
     <Compile Include="Structure\Note\Notations\Technical\ItemChoiceType.cs" />
     <Compile Include="Structure\Note\Notations\Technical\ItemChoiceType1.cs" />
     <Compile Include="Structure\Identification\EncodingItem.cs" />
