@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("articulations")]
-    public class Articulations : ItemHolder<ItemsChoiceType4>
+    public class Articulations : ItemHolder<ArticulationsItem>
     {
         [XmlElement("accent", typeof(EmptyPlacement))]
         [XmlElement("breath-mark", typeof(BreathMark))]
@@ -59,6 +59,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public override ItemsChoiceType4[] ItemsElementName { get; set; }
+        public override ArticulationsItem[] ItemsElementName { get; set; }
     }
 }

@@ -154,8 +154,8 @@
     <Compile Include="Structure\Identification\EncodingItem.cs" />
     <Compile Include="Structure\Note\NoteItem.cs" />
     <Compile Include="Structure\Note\Notations\Ornaments\OrnamentsItem.cs" />
-    <Compile Include="Structure\Note\Notations\ItemsChoiceType4.cs" />
     <Compile Include="Structure\Note\Notations\Technical\TechnicalItem.cs" />
+    <Compile Include="Structure\Note\Notations\ArticulationsItem.cs" />
     <Compile Include="Structure\Dynamics\DynamicsItem.cs" />
     <Compile Include="Structure\Note\Lyric\LyricItem.cs" />
     <Compile Include="Structure\Direction\DirectionTypeItem.cs" />
