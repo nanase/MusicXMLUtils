@@ -36,7 +36,7 @@ namespace MusicXMLUtils.Structure
     [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType("technical")]
-    public class Technical : ItemHolder<ItemsChoiceType3>
+    public class Technical : ItemHolder<TechnicalItem>
     {
         [XmlElement("arrow", typeof(Arrow))]
         [XmlElement("bend", typeof(Bend))]
@@ -67,6 +67,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
-        public override ItemsChoiceType3[] ItemsElementName { get; set; }
+        public override TechnicalItem[] ItemsElementName { get; set; }
     }
 }
