@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("transpose")]
     public class Transpose
     {
+        #region -- Public Properties --
         [XmlElement("diatonic", DataType = "integer")]
         public string Diatonic { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("number", DataType = "positiveInteger")]
         public string Number { get; set; }
+        #endregion
     }
 }
