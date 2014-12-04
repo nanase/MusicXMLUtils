@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("slash")]
     public class Slash
     {
+        #region -- Public Properties --
         [XmlElement("slash-type")]
         public NoteTypeValue SlashType { get; set; }
 
@@ -58,5 +59,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool UseStemsSpecified { get; set; }
+        #endregion
     }
 }
