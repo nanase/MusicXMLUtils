@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "multiple-rest")]
     public class MultipleRest
     {
+        #region -- Public Properties --
         [XmlAttribute("use-symbols")]
         public YesNo UseSymbols { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
 
+        #region -- Constructor --
         public MultipleRest()
         {
         }
@@ -62,5 +65,6 @@ namespace MusicXMLUtils.Structure
             this.UseSymbols = useSymbols;
             this.UseSymbolsSpecified = true;
         }
+        #endregion
     }
 }
