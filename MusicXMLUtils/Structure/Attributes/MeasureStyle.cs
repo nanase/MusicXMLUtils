@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "measure-style")]
     public class MeasureStyle
     {
+        #region -- Public Properties --
         [XmlElement("beat-repeat", typeof(BeatRepeat))]
         [XmlElement("measure-repeat", typeof(MeasureRepeat))]
         [XmlElement("multiple-rest", typeof(MultipleRest))]
@@ -67,5 +68,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
