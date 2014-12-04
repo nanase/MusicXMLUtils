@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "time-modification")]
     public class TimeModification
     {
+        #region -- Public Properties --
         [XmlElement("actual-notes", DataType = "nonNegativeInteger")]
         public string ActualNotes { get; set; }
 
@@ -50,5 +51,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("normal-dot")]
         public Empty[] NormalDot { get; set; }
+        #endregion
     }
 }
