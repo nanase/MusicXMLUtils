@@ -39,12 +39,15 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "attributesDirective", AnonymousType = true)]
     public class AttributesDirective
     {
+        #region -- Public Properties --
         [XmlAttribute("lang", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string Lang { get; set; }
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
 
+        #region -- Constructor --
         public AttributesDirective()
         {
         }
@@ -59,5 +62,6 @@ namespace MusicXMLUtils.Structure
             this.Value = value;
             this.Lang = lang;
         }
+        #endregion
     }
 }
