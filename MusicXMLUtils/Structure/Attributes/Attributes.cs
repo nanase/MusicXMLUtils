@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("attributes")]
     public class Attributes
     {
+        #region -- Public Properties --
         [XmlElement("footnote")]
         public FormattedText Footnote { get; set; }
 
@@ -79,5 +80,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("measure-style")]
         public MeasureStyle[] MeasureStyle { get; set; }
+        #endregion
     }
 }
