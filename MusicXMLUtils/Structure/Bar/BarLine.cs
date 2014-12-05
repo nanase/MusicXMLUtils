@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("barline")]
     public class BarLine
     {
-        public BarLine()
-        {
-            this.Location = RightLeftMiddle.Right;
-        }
-
+        #region -- Public Properties --
         [XmlElement("bar-style")]
         public BarStyleColor BarStyle { get; set; }
 
@@ -85,5 +81,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool DivisionsSpecified { get; set; }
+        #endregion
+
+        #region -- Constructor --
+        public BarLine()
+        {
+            this.Location = RightLeftMiddle.Right;
+        }
+        #endregion
     }
 }
