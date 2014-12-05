@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "empty-font")]
     public class EmptyFont
     {
+        #region -- Public Properties --
         [XmlAttribute("font-family", DataType = "token")]
         public string FontFamily { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool FontWeightSpecified { get; set; }
+        #endregion
     }
 }
