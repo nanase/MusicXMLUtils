@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("appearance")]
     public class Appearance
     {
+        #region -- Public Properties --
         [XmlElement("line-width")]
         public LineWidth[] LineWidth { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("other-appearance")]
         public OtherAppearance[] OtherAppearance { get; set; }
+        #endregion
     }
 }
