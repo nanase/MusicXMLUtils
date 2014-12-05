@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("ending")]
     public class Ending
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "token")]
         public string Number { get; set; }
 
@@ -70,5 +71,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
