@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("distance")]
     public class Distance
     {
+        #region -- Public Properties --
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
