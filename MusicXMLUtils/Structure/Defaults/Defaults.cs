@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("defaults")]
     public class Defaults
     {
+        #region -- Public Properties --
         [XmlElement("scaling")]
         public Scaling Scaling { get; set; }
 
@@ -64,5 +65,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("lyric-language")]
         public LyricLanguage[] LyricLanguage { get; set; }
+        #endregion
     }
 }
