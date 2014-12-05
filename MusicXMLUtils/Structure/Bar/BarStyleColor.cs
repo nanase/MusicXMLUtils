@@ -38,12 +38,15 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "bar-style-color")]
     public class BarStyleColor
     {
+        #region -- Public Properties --
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
 
         [XmlText]
         public BarStyle Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public BarStyleColor()
         {
         }
@@ -58,5 +61,6 @@ namespace MusicXMLUtils.Structure
             this.Value = value;
             this.Color = color;
         }
+        #endregion
     }
 }
