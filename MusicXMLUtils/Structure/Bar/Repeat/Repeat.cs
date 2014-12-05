@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("repeat")]
     public class Repeat
     {
+        #region -- Public Properties --
         [XmlAttribute("direction")]
         public BackwardForward Direction { get; set; }
 
@@ -50,5 +51,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool WingedSpecified { get; set; }
+        #endregion
     }
 }
