@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("scaling")]
     public class Scaling
     {
+        #region -- Public Properties --
         [XmlElement("millimeters")]
         public decimal Millimeters { get; set; }
 
         [XmlElement("tenths")]
         public decimal Tenths { get; set; }
+        #endregion
     }
 }
