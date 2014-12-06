@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "line-width")]
     public class LineWidth
     {
+        #region -- Public Properties --
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
