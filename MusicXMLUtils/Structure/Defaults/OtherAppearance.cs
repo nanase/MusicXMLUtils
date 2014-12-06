@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "other-appearance")]
     public class OtherAppearance
     {
+        #region -- Public Properties --
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
