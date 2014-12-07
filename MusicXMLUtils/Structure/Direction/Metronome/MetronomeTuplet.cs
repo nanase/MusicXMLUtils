@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "metronome-tuplet")]
     public class MetronomeTuplet : TimeModification
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool ShowNumberSpecified { get; set; }
+        #endregion
     }
 }
