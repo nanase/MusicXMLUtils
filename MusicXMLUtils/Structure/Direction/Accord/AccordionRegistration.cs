@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "accordion-registration")]
     public class AccordionRegistration
     {
+        #region -- Public Properties --
         [XmlElement("accordion-high")]
         public Empty AccordionHigh { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("accordion-low")]
         public Empty AccordionLow { get; set; }
+        #endregion
     }
 }
