@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("metronome")]
     public class Metronome
     {
+        #region -- Public Properties --
         [XmlElement("beat-unit", typeof(NoteTypeValue))]
         [XmlElement("beat-unit-dot", typeof(Empty))]
         [XmlElement("metronome-note", typeof(MetronomeNote))]
@@ -56,5 +57,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool ParenthesesSpecified { get; set; }
+        #endregion
     }
 }
