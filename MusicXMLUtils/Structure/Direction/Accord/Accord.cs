@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("accord")]
     public class Accord
     {
+        #region -- Public Properties --
         [XmlElement("tuning-step")]
         public Step TuningStep { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("string", DataType = "positiveInteger")]
         public string String { get; set; }
+        #endregion
     }
 }
