@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "metronome-note")]
     public class MetronomeNote
     {
+        #region -- Public Properties --
         [XmlElement("metronome-type")]
         public NoteTypeValue MetronomeType { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("metronome-tuplet")]
         public MetronomeTuplet MetronomeTuplet { get; set; }
+        #endregion
     }
 }
