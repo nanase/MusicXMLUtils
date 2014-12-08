@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("stick")]
     public class Stick
     {
+        #region -- Public Properties --
         [XmlElement("stick-type")]
         public StickType StickType { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool TipSpecified { get; set; }
+        #endregion
     }
 }
