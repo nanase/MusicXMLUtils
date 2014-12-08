@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "pedal-tuning")]
     public class PedalTuning
     {
+        #region -- Public Properties --
         [XmlElement("pedal-step")]
         public Step PedalStep { get; set; }
 
         [XmlElement("pedal-alter")]
         public decimal PedalAlter { get; set; }
+        #endregion
     }
 }
