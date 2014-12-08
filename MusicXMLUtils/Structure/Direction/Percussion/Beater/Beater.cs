@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("beater")]
     public class Beater
     {
+        #region -- Public Properties --
         [XmlAttribute("tip")]
         public TipDirection Tip { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BeaterValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Beater()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
