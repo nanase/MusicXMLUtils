@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("pedal")]
     public class Pedal
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopChangeContinue Type { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool SignSpecified { get; set; }
+        #endregion
     }
 }
