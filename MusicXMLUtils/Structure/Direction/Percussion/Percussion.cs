@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("percussion")]
     public class Percussion
     {
+        #region -- Public Properties --
         [XmlElement("beater", typeof(Beater))]
         [XmlElement("effect", typeof(Effect))]
         [XmlElement("glass", typeof(Glass))]
@@ -56,5 +57,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool EnclosureSpecified { get; set; }
+        #endregion
     }
 }
