@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType("scordatura")]
     public class Scordatura
     {
+        #region -- Public Properties --
         [XmlElement("accord")]
         public Accord[] Accord { get; set; }
+        #endregion
     }
 }
