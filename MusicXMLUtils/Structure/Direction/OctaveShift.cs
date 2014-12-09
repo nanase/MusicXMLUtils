@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "octave-shift")]
     public class OctaveShift
     {
-        public OctaveShift()
-        {
-            this.Size = "8";
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public UpDownStopContinue Type { get; set; }
 
@@ -64,5 +60,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool SpaceLengthSpecified { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public OctaveShift()
+        {
+            this.Size = "8";
+        }
+        #endregion
     }
 }
