@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "harp-pedals")]
     public class HarpPedals
     {
+        #region -- Public Properties --
         [XmlElement("pedal-tuning")]
         public PedalTuning[] PedalTuning { get; set; }
+        #endregion
     }
 }
