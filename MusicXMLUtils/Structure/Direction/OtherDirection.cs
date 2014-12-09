@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "other-direction")]
     public class OtherDirection
     {
+        #region -- Public Properties --
         [XmlAttribute("print-object")]
         public YesNo PrintObject { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
