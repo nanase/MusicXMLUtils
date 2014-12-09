@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("dashes")]
     public class Dashes
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
@@ -82,5 +83,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
