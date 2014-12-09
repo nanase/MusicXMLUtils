@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("wedge")]
     public class Wedge
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public WedgeType Type { get; set; }
 
@@ -100,5 +101,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
