@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "direction-type")]
     public class DirectionType : ItemHolder<DirectionTypeItem>
     {
+        #region -- Public Properties --
         [XmlElement("accordion-registration", typeof(AccordionRegistration))]
         [XmlElement("bracket", typeof(Bracket))]
         [XmlElement("coda", typeof(EmptyPrintStyleAlign))]
@@ -66,5 +67,6 @@ namespace MusicXMLUtils.Structure
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
         public override DirectionTypeItem[] ItemsElementName { get; set; }
+        #endregion
     }
 }
