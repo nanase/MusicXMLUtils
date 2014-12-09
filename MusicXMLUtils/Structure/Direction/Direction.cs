@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("direction")]
     public class Direction
     {
+        #region -- Public Properties --
         [XmlElement("direction-type")]
         public DirectionType[] DirectionType { get; set; }
 
@@ -70,5 +71,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool DirectiveSpecified { get; set; }
+        #endregion
     }
 }
