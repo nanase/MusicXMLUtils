@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("bracket")]
     public class Bracket
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
@@ -97,5 +98,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
