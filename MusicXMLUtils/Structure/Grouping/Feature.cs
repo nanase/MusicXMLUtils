@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("feature")]
     public class Feature
     {
+        #region -- Public Properties --
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
