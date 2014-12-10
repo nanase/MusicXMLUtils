@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("grouping")]
     public class Grouping
     {
-        public Grouping()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlElement("feature")]
         public Feature[] Feature { get; set; }
 
@@ -55,5 +51,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("member-of", DataType = "token")]
         public string MemberOf { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public Grouping()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
