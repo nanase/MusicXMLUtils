@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("fermata")]
     public class Fermata
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public UprightInverted Type { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public FermataShape Value { get; set; }
+        #endregion
     }
 }
