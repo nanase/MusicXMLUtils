@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("dynamics")]
     public class Dynamics : ItemHolder<DynamicsItem>
     {
+        #region -- Public Properties --
         [XmlElement("f", typeof(Empty))]
         [XmlElement("ff", typeof(Empty))]
         [XmlElement("fff", typeof(Empty))]
@@ -89,5 +90,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool EnclosureSpecified { get; set; }
+        #endregion
     }
 }
