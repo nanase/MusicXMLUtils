@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("figure")]
     public class Figure
     {
+        #region -- Public Properties --
         [XmlElement("prefix")]
         public StyleText Prefix { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("extend")]
         public Extend Extend { get; set; }
+        #endregion
     }
 }
