@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "figured-bass")]
     public class FiguredBass
     {
+        #region -- Public Properties --
         [XmlElement("figure")]
         public Figure[] Figure { get; set; }
 
@@ -67,5 +68,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool ParenthesesSpecified { get; set; }
+        #endregion
     }
 }
