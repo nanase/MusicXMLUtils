@@ -38,12 +38,15 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "degree-type")]
     public class DegreeType
     {
+        #region -- Public Properties --
         [XmlAttribute("text", DataType = "token")]
         public string Text { get; set; }
 
         [XmlText]
         public DegreeTypeValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public DegreeType()
         {
         }
@@ -52,5 +55,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
