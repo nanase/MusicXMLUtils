@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("bass")]
     public class Bass
     {
+        #region -- Public Properties --
         [XmlElement("bass-step")]
         public BassStep BassStep { get; set; }
 
         [XmlElement("bass-alter")]
         public BassAlter BassAlter { get; set; }
+        #endregion
     }
 }
