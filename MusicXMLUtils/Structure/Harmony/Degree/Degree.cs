@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("degree")]
     public class Degree
     {
+        #region -- Public Properties --
         [XmlElement("degree-value")]
         public DegreeValue DegreeValue { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
