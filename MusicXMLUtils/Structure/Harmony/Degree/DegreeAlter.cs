@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "degree-alter")]
     public class DegreeAlter
     {
+        #region -- Public Properties --
         [XmlAttribute("plus-minus")]
         public YesNo PlusMinus { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
