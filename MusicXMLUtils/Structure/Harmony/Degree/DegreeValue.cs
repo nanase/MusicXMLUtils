@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "degree-value")]
     public class DegreeValue
     {
+        #region -- Public Properties --
         [XmlAttribute("symbol")]
         public DegreeSymbolValue Symbol { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
+        #endregion
     }
 }
