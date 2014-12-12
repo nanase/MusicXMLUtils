@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("frame")]
     public class Frame
     {
+        #region -- Public Properties --
         [XmlElement("frame-strings", DataType = "positiveInteger")]
         public string FrameStrings { get; set; }
 
@@ -103,5 +104,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("unplayed", DataType = "token")]
         public string Unplayed { get; set; }
+        #endregion
     }
 }
