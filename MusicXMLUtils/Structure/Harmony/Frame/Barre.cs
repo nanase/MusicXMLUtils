@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("barre")]
     public class Barre
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
