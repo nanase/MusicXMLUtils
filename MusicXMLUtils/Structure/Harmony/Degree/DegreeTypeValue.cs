@@ -35,8 +35,10 @@ namespace MusicXMLUtils.Structure
     {
         [XmlEnum("add")]
         Add,
+
         [XmlEnum("alter")]
         Alter,
+
         [XmlEnum("subtract")]
         Subtract,
     }
