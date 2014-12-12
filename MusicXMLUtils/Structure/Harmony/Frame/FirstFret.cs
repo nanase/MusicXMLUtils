@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "first-fret")]
     public class FirstFret
     {
+        #region -- Public Properties --
         [XmlAttribute("text", DataType = "token")]
         public string Text { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
+        #endregion
     }
 }
