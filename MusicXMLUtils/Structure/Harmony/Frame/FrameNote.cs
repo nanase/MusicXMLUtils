@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "frame-note")]
     public class FrameNote
     {
+        #region -- Public Properties --
         public String String { get; set; }
 
         [XmlElement("fret")]
@@ -48,5 +49,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("barre")]
         public Barre Barre { get; set; }
+        #endregion
     }
 }
