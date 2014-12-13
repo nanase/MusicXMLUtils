@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("root")]
     public class Root
     {
+        #region -- Public Properties --
         [XmlElement("root-step")]
         public RootStep RootStep { get; set; }
 
         [XmlElement("root-alter")]
         public RootAlter RootAlter { get; set; }
+        #endregion
     }
 }
