@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "root-step")]
     public class RootStep
     {
+        #region -- Public Properties --
         [XmlAttribute("text", DataType = "token")]
         public string Text { get; set; }
 
         [XmlText]
         public Step Value { get; set; }
+        #endregion
     }
 }
