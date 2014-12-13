@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("kind")]
     public class Kind
     {
+        #region -- Public Properties --
         [XmlAttribute("use-symbols")]
         public YesNo UseSymbols { get; set; }
 
@@ -79,7 +80,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public KindValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Kind()
         {
         }
@@ -88,5 +91,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
