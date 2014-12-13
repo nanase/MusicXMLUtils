@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "root-alter")]
     public class RootAlter
     {
+        #region -- Public Properties --
         [XmlAttribute("print-object")]
         public YesNo PrintObject { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
