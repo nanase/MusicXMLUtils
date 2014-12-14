@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType("inversion")]
     public class Inversion
     {
+        #region -- Public Properties --
         [XmlText(DataType = "nonNegativeInteger")]
         public string Value { get; set; }
+        #endregion
     }
 }
