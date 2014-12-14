@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("supports")]
     public class Supports
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public YesNo Type { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("value", DataType = "token")]
         public string Value { get; set; }
+        #endregion
     }
 }
