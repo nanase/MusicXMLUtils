@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("identification")]
     public class Identification
     {
+        #region -- Public Properties --
         [XmlElement("creator")]
         public TypedText[] Creator { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlArrayItem("miscellaneous", IsNullable = false)]
         public MiscellaneousField[] Miscellaneous { get; set; }
+        #endregion
     }
 }
