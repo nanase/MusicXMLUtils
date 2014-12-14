@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("harmony")]
     public class Harmony
     {
+        #region -- Public Properties --
         [XmlElement("function", typeof(StyleText))]
         [XmlElement("root", typeof(Root))]
         public object[] Items { get; set; }
@@ -92,5 +93,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
