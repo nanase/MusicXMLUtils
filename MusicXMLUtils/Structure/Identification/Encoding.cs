@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("encoding")]
     public class Encoding : ItemHolder<EncodingItem>
     {
+        #region -- Public Properties --
         [XmlElement("encoder", typeof(TypedText))]
         [XmlElement("encoding-date", typeof(System.DateTime), DataType = "date")]
         [XmlElement("encoding-description", typeof(string))]
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
         public override EncodingItem[] ItemsElementName { get; set; }
+        #endregion
     }
 }
