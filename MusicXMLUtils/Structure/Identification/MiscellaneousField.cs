@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "miscellaneous-field")]
     public class MiscellaneousField
     {
+        #region -- Public Properties --
         [XmlAttribute("name", DataType = "token")]
         public string Name { get; set; }
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
