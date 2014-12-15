@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "measure-layout")]
     public class MeasureLayout
     {
+        #region -- Public Properties --
         [XmlElement("measure-distance")]
         public decimal MeasureDistance { get; set; }
 
         [XmlIgnore]
         public bool MeasureDistanceSpecified { get; set; }
+        #endregion
     }
 }
