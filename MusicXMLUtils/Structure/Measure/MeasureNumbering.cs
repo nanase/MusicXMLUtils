@@ -38,9 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "measure-numbering")]
     public class MeasureNumbering
     {
+        #region -- Public Properties --
         [XmlText]
         public MeasureNumberingValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public MeasureNumbering()
         {
         }
@@ -49,5 +52,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
