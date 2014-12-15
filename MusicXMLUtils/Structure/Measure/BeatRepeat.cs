@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "beat-repeat")]
     public class BeatRepeat
     {
+        #region -- Public Properties --
         [XmlElement("slash-type")]
         public NoteTypeValue SlashType { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool UseDotsSpecified { get; set; }
+        #endregion
     }
 }
