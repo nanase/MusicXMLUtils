@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "measure-repeat")]
     public class MeasureRepeat
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
