@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "accidental-text")]
     public class AccidentalText
     {
+        #region -- Public Properties --
         [XmlAttribute("lang", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string Lang { get; set; }
 
@@ -47,7 +48,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public AccidentalValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public AccidentalText()
         {
         }
@@ -56,5 +59,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
