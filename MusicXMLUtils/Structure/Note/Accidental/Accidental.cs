@@ -37,6 +37,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("accidental")]
     public class Accidental
     {
+        #region -- Public Properties --
         [XmlAttribute("cautionary")]
         public YesNo Cautionary { get; set; }
 
@@ -69,7 +70,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public AccidentalValue Value { get; set; }
+        #endregion
 
+        #region -- Constructor --
         public Accidental()
         {
         }
@@ -78,5 +81,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
