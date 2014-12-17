@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("lyric")]
     public class Lyric : ItemHolder<LyricItem>
     {
+        #region -- Public Properties --
         [XmlElement("elision", typeof(TextFontColor))]
         [XmlElement("extend", typeof(Extend))]
         [XmlElement("humming", typeof(Empty))]
@@ -113,5 +114,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
