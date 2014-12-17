@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("beam")]
     public class Beam
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "positiveInteger")]
         [DefaultValue("1")]
         public string Number { get; set; }
@@ -59,7 +60,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BeamValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Beam()
         {
             this.Number = "1";
@@ -70,5 +73,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
