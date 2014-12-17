@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "text-element-data")]
     public class TextElementData
     {
+        #region -- Public Properties --
         [XmlAttribute("font-family", DataType = "token")]
         public string FontFamily { get; set; }
 
@@ -89,5 +90,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
