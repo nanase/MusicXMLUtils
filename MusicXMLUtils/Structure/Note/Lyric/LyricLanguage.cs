@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "lyric-language")]
     public class LyricLanguage
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "NMTOKEN")]
         public string Number { get; set; }
 
@@ -47,5 +48,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("lang", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string Lang { get; set; }
+        #endregion
     }
 }
