@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "lyric-font")]
     public class LyricFont
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "NMTOKEN")]
         public string Number { get; set; }
 
@@ -61,5 +62,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool FontWeightSpecified { get; set; }
+        #endregion
     }
 }
