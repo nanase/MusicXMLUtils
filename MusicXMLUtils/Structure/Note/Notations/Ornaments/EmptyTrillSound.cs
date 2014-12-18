@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "empty-trill-sound")]
     public class EmptyTrillSound
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
@@ -86,5 +87,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool LastBeatSpecified { get; set; }
+        #endregion
     }
 }
