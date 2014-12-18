@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("hole")]
     public class Hole
     {
+        #region -- Public Properties --
         [XmlElement("hole-type")]
         public string HoleType { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
