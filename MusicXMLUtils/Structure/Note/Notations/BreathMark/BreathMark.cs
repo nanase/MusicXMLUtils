@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "breath-mark")]
     public class BreathMark
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public BreathMarkValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public BreathMark()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
