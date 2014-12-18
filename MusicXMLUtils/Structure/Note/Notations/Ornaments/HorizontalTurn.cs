@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "horizontal-turn")]
     public class HorizontalTurn
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
@@ -91,5 +92,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool SlashSpecified { get; set; }
+        #endregion
     }
 }
