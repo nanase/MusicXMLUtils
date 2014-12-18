@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("mordent")]
     public class Mordent : EmptyTrillSound
     {
+        #region -- Public Properties --
         [XmlAttribute("long")]
         public YesNo Long { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool DepartureSpecified { get; set; }
+        #endregion
     }
 }
