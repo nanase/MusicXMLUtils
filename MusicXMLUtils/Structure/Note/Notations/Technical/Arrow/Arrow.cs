@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("arrow")]
     public class Arrow
     {
+        #region -- Public Properties --
         [XmlElement("arrow-direction", typeof(ArrowDirection))]
         [XmlElement("arrow-style", typeof(ArrowStyle))]
         [XmlElement("circular-arrow", typeof(CircularArrow))]
@@ -48,5 +49,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
