@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("bend")]
     public class Bend
     {
+        #region -- Public Properties --
         [XmlElement("bend-alter")]
         public decimal BendAlter { get; set; }
 
@@ -75,5 +76,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool LastBeatSpecified { get; set; }
+        #endregion
     }
 }
