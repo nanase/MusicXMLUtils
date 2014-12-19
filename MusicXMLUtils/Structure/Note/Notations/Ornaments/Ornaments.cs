@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("ornaments")]
     public class Ornaments : ItemHolder<OrnamentsItem>
     {
+        #region -- Public Properties --
         [XmlElement("delayed-inverted-turn", typeof(HorizontalTurn))]
         [XmlElement("delayed-turn", typeof(HorizontalTurn))]
         [XmlElement("inverted-mordent", typeof(Mordent))]
@@ -60,5 +61,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("accidental-mark")]
         public AccidentalMark[] AccidentalMark { get; set; }
+        #endregion
     }
 }
