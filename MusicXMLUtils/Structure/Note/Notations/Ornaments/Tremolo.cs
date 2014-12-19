@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("tremolo")]
     public class Tremolo
     {
-        public Tremolo()
-        {
-            this.Type = StartStopSingle.Single;
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         [DefaultValue(StartStopSingle.Single)]
         public StartStopSingle Type { get; set; }
@@ -55,5 +51,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "integer")]
         public string Value { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public Tremolo()
+        {
+            this.Type = StartStopSingle.Single;
+        }
+        #endregion
     }
 }
