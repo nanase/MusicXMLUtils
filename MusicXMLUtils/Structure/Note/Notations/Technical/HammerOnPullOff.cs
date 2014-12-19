@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "hammer-on-pull-off")]
     public class HammerOnPullOff
     {
-        public HammerOnPullOff()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
@@ -58,5 +54,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public HammerOnPullOff()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
