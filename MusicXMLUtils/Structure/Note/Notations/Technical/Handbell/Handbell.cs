@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("handbell")]
     public class Handbell
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public HandbellValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Handbell()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
