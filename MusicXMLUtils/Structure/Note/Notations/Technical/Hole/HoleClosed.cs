@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "hole-closed")]
     public class HoleClosed
     {
+        #region -- Public Properties --
         [XmlAttribute("location")]
         public HoleClosedLocation Location { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public HoleClosedValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public HoleClosed()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
