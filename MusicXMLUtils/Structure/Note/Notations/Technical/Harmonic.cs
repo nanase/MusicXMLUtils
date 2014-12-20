@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("harmonic")]
     public class Harmonic
     {
+        #region -- Public Properties --
         [XmlElement("artificial", typeof(Empty))]
         [XmlElement("natural", typeof(Empty))]
         [XmlChoiceIdentifier("ItemElementName")]
@@ -66,5 +67,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
