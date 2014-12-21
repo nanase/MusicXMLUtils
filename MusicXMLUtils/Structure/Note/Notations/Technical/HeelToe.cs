@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "heel-toe")]
     public class HeelToe : EmptyPlacement
     {
+        #region -- Public Properties --
         [XmlAttribute("substitution")]
         public YesNo Substitution { get; set; }
 
         [XmlIgnore]
         public bool SubstitutionSpecified { get; set; }
+        #endregion
     }
 }
