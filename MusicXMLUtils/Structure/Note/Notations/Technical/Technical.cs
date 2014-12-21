@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("technical")]
     public class Technical : ItemHolder<TechnicalItem>
     {
+        #region -- Public Properties --
         [XmlElement("arrow", typeof(Arrow))]
         [XmlElement("bend", typeof(Bend))]
         [XmlElement("double-tongue", typeof(EmptyPlacement))]
@@ -68,5 +69,6 @@ namespace MusicXMLUtils.Structure
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
         public override TechnicalItem[] ItemsElementName { get; set; }
+        #endregion
     }
 }
