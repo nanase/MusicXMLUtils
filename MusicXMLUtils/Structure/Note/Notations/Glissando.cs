@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("glissando")]
     public class Glissando
     {
-        public Glissando()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
@@ -70,5 +66,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public Glissando()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
