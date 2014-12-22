@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("articulations")]
     public class Articulations : ItemHolder<ArticulationsItem>
     {
+        #region -- Public Properties --
         [XmlElement("accent", typeof(EmptyPlacement))]
         [XmlElement("breath-mark", typeof(BreathMark))]
         [XmlElement("caesura", typeof(EmptyPlacement))]
@@ -60,5 +61,6 @@ namespace MusicXMLUtils.Structure
         [XmlElement("ItemsElementName")]
         [XmlIgnore]
         public override ArticulationsItem[] ItemsElementName { get; set; }
+        #endregion
     }
 }
