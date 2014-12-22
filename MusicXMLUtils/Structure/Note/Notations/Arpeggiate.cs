@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("arpeggiate")]
     public class Arpeggiate
     {
+        #region -- Public Properties --
         [XmlAttribute("number", DataType = "positiveInteger")]
         public string Number { get; set; }
 
@@ -79,5 +80,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
