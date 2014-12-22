@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "empty-line")]
     public class EmptyLine
     {
+        #region -- Public Properties --
         [XmlAttribute("line-shape")]
         public LineShape LineShape { get; set; }
 
@@ -67,5 +68,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
