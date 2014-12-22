@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "non-arpeggiate")]
     public class NonArpeggiate
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public TopBottom Type { get; set; }
 
@@ -76,5 +77,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
     }
 }
