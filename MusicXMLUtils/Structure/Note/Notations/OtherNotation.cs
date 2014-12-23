@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "other-notation")]
     public class OtherNotation
     {
-        public OtherNotation()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopSingle Type { get; set; }
 
@@ -64,5 +60,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public OtherNotation()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
