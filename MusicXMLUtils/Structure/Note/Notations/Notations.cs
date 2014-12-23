@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("notations")]
     public class Notations
     {
+        #region -- Public Properties --
         [XmlElement("footnote")]
         public FormattedText Footnote { get; set; }
 
@@ -65,5 +66,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
