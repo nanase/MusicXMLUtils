@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("slur")]
     public class Slur
     {
-        public Slur()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
@@ -142,5 +138,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public Slur()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
