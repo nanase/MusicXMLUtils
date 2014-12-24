@@ -38,13 +38,17 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "strong-accent")]
     public class StrongAccent : EmptyPlacement
     {
+        #region -- Public Properties --
+        [XmlAttribute("type")]
+        [DefaultValue(UpDown.Up)]
+        public UpDown Type { get; set; }
+        #endregion
+
+        #region -- Constructors --
         public StrongAccent()
         {
             this.Type = UpDown.Up;
         }
-
-        [XmlAttribute("type")]
-        [DefaultValue(UpDown.Up)]
-        public UpDown Type { get; set; }
+        #endregion
     }
 }
