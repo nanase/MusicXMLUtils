@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "tuplet-type")]
     public class TupletType
     {
+        #region -- Public Properties --
         [XmlAttribute("font-family", DataType = "token")]
         public string FontFamily { get; set; }
 
@@ -62,7 +63,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public NoteTypeValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public TupletType()
         {
         }
@@ -71,5 +74,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
