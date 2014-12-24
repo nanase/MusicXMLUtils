@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "tuplet-portion")]
     public class TupletPortion
     {
+        #region -- Public Properties --
         [XmlElement("tuplet-number")]
         public TupletNumber TupletNumber { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("tuplet-dot")]
         public TupletDot[] TupletDot { get; set; }
+        #endregion
     }
 }
