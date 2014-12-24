@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("tuplet")]
     public class Tuplet
     {
+        #region -- Public Properties --
         [XmlElement("tuplet-actual")]
         public TupletPortion TupletActual { get; set; }
 
@@ -103,5 +104,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
