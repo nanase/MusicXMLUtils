@@ -40,10 +40,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "empty-placement")]
     public class EmptyPlacement
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
         [XmlIgnore]
         public bool PlacementSpecified { get; set; }
+        #endregion
     }
 }
