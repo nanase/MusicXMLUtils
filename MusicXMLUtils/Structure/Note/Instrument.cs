@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType("instrument")]
     public class Instrument
     {
+        #region -- Public Properties --
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+        #endregion
     }
 }
