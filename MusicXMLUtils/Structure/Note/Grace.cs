@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("grace")]
     public class Grace
     {
+        #region -- Public Properties --
         [XmlAttribute("steal-time-previous")]
         public decimal StealTimePrevious { get; set; }
 
@@ -61,5 +62,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool SlashSpecified { get; set; }
+        #endregion
     }
 }
