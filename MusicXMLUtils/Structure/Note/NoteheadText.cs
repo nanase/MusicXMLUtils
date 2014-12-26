@@ -38,8 +38,10 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "notehead-text")]
     public class NoteheadText
     {
+        #region -- Public Properties --
         [XmlElement("accidental-text", typeof(AccidentalText))]
         [XmlElement("display-text", typeof(FormattedText))]
         public object[] Items { get; set; }
+        #endregion
     }
 }
