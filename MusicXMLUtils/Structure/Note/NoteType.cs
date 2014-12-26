@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "note-type")]
     public class NoteType
     {
+        #region -- Public Properties --
         [XmlAttribute("size")]
         public SymbolSize Size { get; set; }
 
@@ -46,7 +47,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public NoteTypeValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public NoteType()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
