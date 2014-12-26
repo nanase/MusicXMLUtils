@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("notehead")]
     public class Notehead
     {
+        #region -- Public Properties --
         [XmlAttribute("filled")]
         public YesNo Filled { get; set; }
 
@@ -73,5 +74,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public NoteheadValue Value { get; set; }
+        #endregion
     }
 }
