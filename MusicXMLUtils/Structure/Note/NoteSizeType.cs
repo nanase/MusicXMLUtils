@@ -35,8 +35,10 @@ namespace MusicXMLUtils.Structure
     {
         [XmlEnum("cue")]
         Cue,
+
         [XmlEnum("grace")]
         Grace,
+
         [XmlEnum("large")]
         Large,
     }
