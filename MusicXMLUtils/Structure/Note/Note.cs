@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("note")]
     public class Note : ItemHolder<NoteItem>
     {
+        #region -- Public Properties --
         [XmlElement("chord", typeof(Empty))]
         [XmlElement("cue", typeof(Empty))]
         [XmlElement("duration", typeof(decimal))]
@@ -190,7 +191,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PizzicatoSpecified { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Note()
         {
         }
@@ -226,5 +229,6 @@ namespace MusicXMLUtils.Structure
             this.Voice = voise.ToString();
             this.Type = new NoteType(noteTypeValue);
         }
+        #endregion
     }
 }
