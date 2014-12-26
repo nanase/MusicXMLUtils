@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "note-size")]
     public class NoteSize
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public NoteSizeType Type { get; set; }
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
