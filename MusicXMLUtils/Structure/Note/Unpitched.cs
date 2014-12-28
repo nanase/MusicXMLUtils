@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("unpitched")]
     public class Unpitched
     {
+        #region -- Public Properties --
         [XmlElement("display-step")]
         public Step DisplayStep { get; set; }
 
         [XmlElement("display-octave", DataType = "integer")]
         public string DisplayOctave { get; set; }
+        #endregion
     }
 }
