@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("stem")]
     public class Stem
     {
+        #region -- Public Properties --
         [XmlAttribute("default-x")]
         public decimal DefaultX { get; set; }
 
@@ -67,7 +68,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public StemValue Value { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Stem()
         {
         }
@@ -76,5 +79,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Value = value;
         }
+        #endregion
     }
 }
