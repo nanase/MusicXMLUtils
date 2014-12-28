@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("rest")]
     public class Rest
     {
+        #region -- Public Properties --
         [XmlElement("display-step")]
         public Step DisplayStep { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool MeasureSpecified { get; set; }
+        #endregion
     }
 }
