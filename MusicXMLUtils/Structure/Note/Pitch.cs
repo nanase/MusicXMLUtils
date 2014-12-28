@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("pitch")]
     public class Pitch
     {
+        #region -- Public Properties --
         [XmlElement("step")]
         public Step Step { get; set; }
 
@@ -49,7 +50,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("octave", DataType = "integer")]
         public string Octave { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public Pitch()
         {
         }
@@ -68,5 +71,6 @@ namespace MusicXMLUtils.Structure
             this.Step = step;
             this.Octave = octave.ToString();
         }
+        #endregion
     }
 }
