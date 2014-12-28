@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("tie")]
     public class Tie
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStop Type { get; set; }
 
         [XmlAttribute("time-only", DataType = "token")]
         public string TimeOnly { get; set; }
+        #endregion
     }
 }
