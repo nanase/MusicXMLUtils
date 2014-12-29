@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "page-margins")]
     public class PageMargins
     {
+        #region -- Public Properties --
         [XmlElement("left-margin")]
         public decimal LeftMargin { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool TypeSpecified { get; set; }
+        #endregion
     }
 }
