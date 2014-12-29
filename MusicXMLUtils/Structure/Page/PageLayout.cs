@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "page-layout")]
     public class PageLayout
     {
+        #region -- Public Properties --
         [XmlElement("page-height")]
         public decimal PageHeight { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("page-margins")]
         public PageMargins[] PageMargins { get; set; }
+        #endregion
     }
 }
