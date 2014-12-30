@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "part-symbol")]
     public class PartSymbol
     {
+        #region -- Public Properties --
         [XmlAttribute("top-staff", DataType = "positiveInteger")]
         public string TopStaff { get; set; }
 
@@ -73,5 +74,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public GroupSymbolValue Value { get; set; }
+        #endregion
     }
 }
