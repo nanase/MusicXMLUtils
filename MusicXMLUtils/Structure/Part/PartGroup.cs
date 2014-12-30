@@ -38,11 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "part-group")]
     public class PartGroup
     {
-        public PartGroup()
-        {
-            this.Number = "1";
-        }
-
+        #region -- Public Properties --
         [XmlElement("group-name")]
         public GroupName GroupName { get; set; }
 
@@ -76,5 +72,13 @@ namespace MusicXMLUtils.Structure
         [XmlAttribute("number", DataType = "token")]
         [DefaultValue("1")]
         public string Number { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public PartGroup()
+        {
+            this.Number = "1";
+        }
+        #endregion
     }
 }
