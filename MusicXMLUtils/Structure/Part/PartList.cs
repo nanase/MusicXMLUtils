@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "part-list")]
     public class PartList
     {
+        #region -- Public Properties --
         [XmlElement("part-group", Order = 0)]
         public PartGroup[] PartGroup { get; set; }
 
@@ -47,5 +48,6 @@ namespace MusicXMLUtils.Structure
         [XmlElement("part-group", typeof(PartGroup), Order = 2)]
         [XmlElement("score-part", typeof(ScorePart), Order = 2)]
         public object[] Items { get; set; }
+        #endregion
     }
 }
