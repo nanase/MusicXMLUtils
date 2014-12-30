@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "part-name")]
     public class PartName
     {
+        #region -- Public Properties --
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
