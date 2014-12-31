@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "group-symbol")]
     public class GroupSymbol
     {
+        #region -- Public Properties --
         [XmlAttribute("default-x")]
         public decimal DefaultX { get; set; }
 
@@ -67,5 +68,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public GroupSymbolValue Value { get; set; }
+        #endregion
     }
 }
