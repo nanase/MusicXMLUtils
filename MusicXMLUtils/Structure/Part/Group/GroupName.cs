@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "group-name")]
     public class GroupName
     {
+        #region -- Public Properties --
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
