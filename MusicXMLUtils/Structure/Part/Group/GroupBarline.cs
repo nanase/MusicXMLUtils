@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "group-barline")]
     public class GroupBarline
     {
+        #region -- Public Properties --
         [XmlAttribute("color", DataType = "token")]
         public string Color { get; set; }
 
         [XmlText]
         public GroupBarlineValue Value { get; set; }
+        #endregion
     }
 }
