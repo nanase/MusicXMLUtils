@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "other-play")]
     public class OtherPlay
     {
+        #region -- Public Properties --
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
