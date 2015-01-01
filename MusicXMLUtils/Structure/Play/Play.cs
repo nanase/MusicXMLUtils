@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("play")]
     public class Play
     {
+        #region -- Public Properties --
         [XmlElement("ipa", typeof(string))]
         [XmlElement("mute", typeof(Mute))]
         [XmlElement("other-play", typeof(OtherPlay))]
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+        #endregion
     }
 }
