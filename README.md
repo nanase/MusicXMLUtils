@@ -8,4 +8,4 @@ MusicXML 3.0 のスキーマに従い、クラス構造を C# で実装したも
 
 **[MIT ライセンス](//github.com/nanase/MusicXMLUtils/blob/master/LICENSE)**
 
-Copyright &copy; 2014 Tomona Nanase
+Copyright &copy; 2014-2015 Tomona Nanase
