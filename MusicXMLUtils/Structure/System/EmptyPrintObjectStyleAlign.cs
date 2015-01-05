@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "empty-print-object-style-align")]
     public class EmptyPrintObjectStyleAlign
     {
+        #region -- Public Properties --
         [XmlAttribute("print-object")]
         public YesNo PrintObject { get; set; }
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
