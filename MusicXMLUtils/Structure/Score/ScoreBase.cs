@@ -36,11 +36,7 @@ namespace MusicXMLUtils.Structure
 {
     public abstract class ScoreBase<T> where T: ScoreBase<T>
     {
-        public ScoreBase()
-        {
-            this.Version = "3.0";
-        }
-
+        #region -- Public Properties --
         [XmlElement("work")]
         public Work Work { get; set; }
 
@@ -74,6 +70,13 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         protected abstract string DocTypeSysID { get; } 
+        #endregion
+
+        #region -- Constructors --
+        public ScoreBase()
+        {
+            this.Version = "3.0";
+        }
 
         public static T Deserialize(string filepath)
         {
@@ -110,5 +113,6 @@ namespace MusicXMLUtils.Structure
                 serializer.Serialize(writer, score, nullSpace);
             }
         }
+        #endregion
     }
 }
