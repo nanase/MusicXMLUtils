@@ -38,12 +38,15 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "scorepartwisePart", AnonymousType = true)]
     public class ScorePartwisePart
     {
+        #region -- Public Properties --
         [XmlElement("measure")]
         public ScorePartwisePartMeasure[] Measure { get; set; }
 
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public ScorePartwisePart()
         {
         }
@@ -55,5 +58,6 @@ namespace MusicXMLUtils.Structure
 
             this.Id = id;
         }
+        #endregion
     }
 }
