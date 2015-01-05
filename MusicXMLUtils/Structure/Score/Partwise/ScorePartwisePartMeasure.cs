@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "scorepartwisePartMeasure", AnonymousType = true)]
     public class ScorePartwisePartMeasure
     {
+        #region -- Public Properties --
         [XmlElement("attributes", typeof(Attributes))]
         [XmlElement("backup", typeof(Backup))]
         [XmlElement("barline", typeof(BarLine))]
@@ -73,7 +74,9 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool WidthSpecified { get; set; }
+        #endregion
 
+        #region -- Constructors --
         public ScorePartwisePartMeasure()
         {
         }
@@ -90,5 +93,6 @@ namespace MusicXMLUtils.Structure
         {
             this.Number = number.ToString();
         }
+        #endregion
     }
 }
