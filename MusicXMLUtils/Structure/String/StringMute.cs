@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "string-mute")]
     public class StringMute
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public OnOff Type { get; set; }
+        #endregion
     }
 }
