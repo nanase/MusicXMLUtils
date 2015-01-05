@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "system-dividers")]
     public class SystemDividers
     {
+        #region -- Public Properties --
         [XmlElement("left-divider")]
         public EmptyPrintObjectStyleAlign LeftDivider { get; set; }
 
         [XmlElement("right-divider")]
         public EmptyPrintObjectStyleAlign RightDivider { get; set; }
+        #endregion
     }
 }
