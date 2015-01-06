@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "scoretimewiseMeasure", AnonymousType = true)]
     public class ScoreTimewiseMeasure
     {
+        #region -- Public Properties --
         [XmlElement("part")]
         public ScoreTimewiseMeasurePart[] Part { get; set; }
 
@@ -61,5 +62,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool WidthSpecified { get; set; }
+        #endregion
     }
 }
