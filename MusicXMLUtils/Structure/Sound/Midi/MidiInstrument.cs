@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "midi-instrument")]
     public class MidiInstrument
     {
+        #region -- Public Properties --
         [XmlElement("midi-channel", DataType = "positiveInteger")]
         public string MidiChannel { get; set; }
 
@@ -73,5 +74,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+        #endregion
     }
 }
