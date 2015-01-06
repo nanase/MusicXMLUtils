@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "scoretimewiseMeasurePart", AnonymousType = true)]
     public class ScoreTimewiseMeasurePart
     {
+        #region -- Public Properties --
         [XmlElement("attributes", typeof(Attributes))]
         [XmlElement("backup", typeof(Backup))]
         [XmlElement("barline", typeof(BarLine))]
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "IDREF")]
         public string Id { get; set; }
+        #endregion
     }
 }
