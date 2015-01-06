@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("sound")]
     public class Sound
     {
+        #region -- Public Properties --
         [XmlElement("midi-device")]
         public MidiDevice[] MidiDevice { get; set; }
 
@@ -124,5 +125,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("sostenuto-pedal")]
         public string SostenutoPedal { get; set; }
+        #endregion
     }
 }
