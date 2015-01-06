@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "midi-device")]
     public class MidiDevice
     {
+        #region -- Public Properties --
         [XmlAttribute("port", DataType = "positiveInteger")]
         public string Port { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
