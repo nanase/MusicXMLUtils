@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "staff-tuning")]
     public class StaffTuning
     {
+        #region -- Public Properties --
         [XmlElement("tuning-step")]
         public Step TuningStep { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("line", DataType = "integer")]
         public string Line { get; set; }
+        #endregion
     }
 }
