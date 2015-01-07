@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("string")]
     public class String
     {
+        #region -- Public Properties --
         [XmlAttribute("placement")]
         public AboveBelow Placement { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "positiveInteger")]
         public string Value { get; set; }
+        #endregion
     }
 }
