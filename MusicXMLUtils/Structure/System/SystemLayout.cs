@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "system-layout")]
     public class SystemLayout
     {
+        #region -- Public Properties --
         [XmlElement("system-margins")]
         public SystemMargins SystemMargins { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("system-dividers")]
         public SystemDividers SystemDividers { get; set; }
+        #endregion
     }
 }
