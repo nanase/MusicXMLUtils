@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "staff-layout")]
     public class StaffLayout
     {
+        #region -- Public Properties --
         [XmlElement("staff-distance")]
         public decimal StaffDistance { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("number", DataType = "positiveInteger")]
         public string Number { get; set; }
+        #endregion
     }
 }
