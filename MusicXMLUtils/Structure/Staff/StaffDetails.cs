@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "staff-details")]
     public class StaffDetails
     {
+        #region -- Public Properties --
         [XmlElement("staff-type")]
         public StaffType StaffType { get; set; }
 
@@ -79,5 +80,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintSpacingSpecified { get; set; }
+        #endregion
     }
 }
