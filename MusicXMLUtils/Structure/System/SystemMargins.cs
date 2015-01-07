@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "system-margins")]
     public class SystemMargins
     {
+        #region -- Public Properties --
         [XmlElement("left-margin")]
         public decimal LeftMargin { get; set; }
 
         [XmlElement("right-margin")]
         public decimal RightMargin { get; set; }
+        #endregion
     }
 }
