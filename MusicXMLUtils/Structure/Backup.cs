@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("backup")]
     public class Backup
     {
+        #region -- Public Properties --
         [XmlElement("duration")]
         public decimal Duration { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("level")]
         public Level Level { get; set; }
+        #endregion
     }
 }
