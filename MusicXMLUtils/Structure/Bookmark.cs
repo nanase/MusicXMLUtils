@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("bookmark")]
     public class Bookmark
     {
+        #region -- Public Properties --
         [XmlAttribute("id", DataType = "ID")]
         public string Id { get; set; }
 
@@ -49,5 +50,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("position", DataType = "positiveInteger")]
         public string Position { get; set; }
+        #endregion
     }
 }
