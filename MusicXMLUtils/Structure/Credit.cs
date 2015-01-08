@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("credit")]
     public class Credit
     {
+        #region -- Public Properties --
         [XmlElement("credit-type", Order = 0)]
         public string[] CreditType { get; set; }
 
@@ -55,5 +56,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("page", DataType = "positiveInteger")]
         public string Page { get; set; }
+        #endregion
     }
 }
