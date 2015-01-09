@@ -39,6 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "formatted-text")]
     public class FormattedText
     {
+        #region -- Public Properties --
         [XmlAttribute("lang", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/XML/1998/namespace")]
         public string Lang { get; set; }
 
@@ -47,5 +48,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
