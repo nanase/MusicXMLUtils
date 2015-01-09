@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("fingering")]
     public class Fingering
     {
+        #region -- Public Properties --
         [XmlAttribute("substitution")]
         public YesNo Substitution { get; set; }
 
@@ -58,5 +59,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
