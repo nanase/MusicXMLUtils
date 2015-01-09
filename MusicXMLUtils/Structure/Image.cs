@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("image")]
     public class Image
     {
+        #region -- Public Properties --
         [XmlAttribute("source", DataType = "anyURI")]
         public string Source { get; set; }
 
         [XmlAttribute("type", DataType = "token")]
         public string Type { get; set; }
+        #endregion
     }
 }
