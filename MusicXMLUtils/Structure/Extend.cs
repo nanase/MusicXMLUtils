@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType("extend")]
     public class Extend
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
         [XmlIgnore]
         public bool TypeSpecified { get; set; }
+        #endregion
     }
 }
