@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("fret")]
     public class Fret
     {
+        #region -- Public Properties --
         [XmlAttribute("font-family", DataType = "token")]
         public string FontFamily { get; set; }
 
@@ -61,5 +62,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText(DataType = "nonNegativeInteger")]
         public string Value { get; set; }
+        #endregion
     }
 }
