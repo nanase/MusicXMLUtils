@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("forward")]
     public class Forward
     {
+        #region -- Public Properties --
         [XmlElement("duration")]
         public decimal Duration { get; set; }
 
@@ -52,5 +53,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("staff", DataType = "positiveInteger")]
         public string Staff { get; set; }
+        #endregion
     }
 }
