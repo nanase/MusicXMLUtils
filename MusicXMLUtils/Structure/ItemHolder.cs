@@ -6,14 +6,19 @@ namespace MusicXMLUtils.Structure
 {
     public abstract class ItemHolder<T>
     {
+        #region -- Private Fields --
         private List<Tuple<T, object>> items = null;
+        #endregion
 
+        #region -- Public Properties --
         [XmlIgnore]
         public abstract object[] Items { get; set; }
 
         [XmlIgnore]
         public abstract T[] ItemsElementName { get; set; }
+        #endregion
 
+        #region -- Public Methods --
         public void InitalizeItems()
         {
             if (this.items == null)
@@ -49,5 +54,6 @@ namespace MusicXMLUtils.Structure
             this.items.Clear();
             this.items = null;
         }
+        #endregion
     }
 }
