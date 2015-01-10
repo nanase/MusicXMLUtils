@@ -39,13 +39,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("link")]
     public class Link
     {
-        public Link()
-        {
-            this.Type = OpusType.Simple;
-            this.Show = OpusShow.Replace;
-            this.Actuate = OpusActuate.OnRequest;
-        }
-
+        #region -- Public Properties --
         [XmlAttribute("href", Form = XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
         public string HRef { get; set; }
 
@@ -101,5 +95,15 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool RelativeYSpecified { get; set; }
+        #endregion
+
+        #region -- Constructors --
+        public Link()
+        {
+            this.Type = OpusType.Simple;
+            this.Show = OpusShow.Replace;
+            this.Actuate = OpusActuate.OnRequest;
+        }
+        #endregion
     }
 }
