@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("level")]
     public class Level
     {
+        #region -- Public Properties --
         [XmlAttribute("reference")]
         public YesNo Reference { get; set; }
 
@@ -64,5 +65,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
