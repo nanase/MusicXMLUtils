@@ -40,9 +40,12 @@ namespace MusicXMLUtils
     [XmlRoot("score-timewise", Namespace = "", IsNullable = false)]
     public class ScoreTimewise : ScoreBase<ScoreTimewise>
     {
+        #region -- Public Properties --
         [XmlElement("measure")]
         public ScoreTimewiseMeasure[] Measure { get; set; }
+        #endregion
 
+        #region -- Protected Methods --
         protected override string DocTypeName
         {
             get { return "score-timewise"; }
@@ -57,5 +60,6 @@ namespace MusicXMLUtils
         {
             get { return "http://www.musicxml.org/dtds/timewise.dtd"; }
         }
+        #endregion
     }
 }
