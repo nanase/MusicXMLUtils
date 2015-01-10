@@ -40,9 +40,12 @@ namespace MusicXMLUtils
     [XmlRoot("score-partwise", Namespace = "", IsNullable = false)]
     public class ScorePartwise : ScoreBase<ScorePartwise>
     {
+        #region -- Public Properties --
         [XmlElement("part")]
         public ScorePartwisePart[] Part { get; set; }
+        #endregion
 
+        #region -- Protected Methods --
         protected override string DocTypeName
         {
             get { return "score-partwise"; }
@@ -57,5 +60,6 @@ namespace MusicXMLUtils
         {
             get { return "http://www.musicxml.org/dtds/partwise.dtd"; }
         }
+        #endregion
     }
 }
