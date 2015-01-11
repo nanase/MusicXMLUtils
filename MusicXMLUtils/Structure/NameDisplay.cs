@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "name-display")]
     public class NameDisplay
     {
+        #region -- Public Properties --
         [XmlElement("accidental-text", typeof(AccidentalText))]
         [XmlElement("display-text", typeof(FormattedText))]
         public object[] Items { get; set; }
@@ -47,5 +48,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool PrintObjectSpecified { get; set; }
+        #endregion
     }
 }
