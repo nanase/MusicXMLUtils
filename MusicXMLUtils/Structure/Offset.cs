@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("offset")]
     public class Offset
     {
+        #region -- Public Properties --
         [XmlAttribute("sound")]
         public YesNo Sound { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlText]
         public decimal Value { get; set; }
+        #endregion
     }
 }
