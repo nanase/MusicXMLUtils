@@ -38,7 +38,9 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "style-text")]
     public class StyleText
     {
+        #region -- Public Properties --
         [XmlText]
         public string Value { get; set; }
+        #endregion
     }
 }
