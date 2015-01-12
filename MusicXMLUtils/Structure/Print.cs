@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("print")]
     public class Print
     {
+        #region -- Public Properties --
         [XmlElement("page-layout")]
         public PageLayout PageLayout { get; set; }
 
@@ -82,5 +83,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("page-number", DataType = "token")]
         public string PageNumber { get; set; }
+        #endregion
     }
 }
