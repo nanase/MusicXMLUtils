@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "score-part")]
     public class ScorePart
     {
+        #region -- Public Properties --
         [XmlElement("identification")]
         public Identification Identification { get; set; }
 
@@ -67,5 +68,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "ID")]
         public string Id { get; set; }
+        #endregion
     }
 }
