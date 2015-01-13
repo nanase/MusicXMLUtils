@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "score-instrument")]
     public class ScoreInstrument
     {
+        #region -- Public Properties --
         [XmlElement("instrument-name")]
         public string InstrumentName { get; set; }
 
@@ -56,5 +57,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlAttribute("id", DataType = "ID")]
         public string Id { get; set; }
+        #endregion
     }
 }
