@@ -38,10 +38,12 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "virtual-instrument")]
     public class VirtualInstrument
     {
+        #region -- Public Properties --
         [XmlElement("virtual-library")]
         public string VirtualLibrary { get; set; }
 
         [XmlElement("virtual-name")]
         public string VirtualName { get; set; }
+        #endregion
     }
 }
