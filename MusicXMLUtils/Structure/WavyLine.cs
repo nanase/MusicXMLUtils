@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType(TypeName = "wavy-line")]
     public class WavyLine
     {
+        #region -- Public Properties --
         [XmlAttribute("type")]
         public StartStopContinue Type { get; set; }
 
@@ -118,5 +119,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlIgnore]
         public bool LastBeatSpecified { get; set; }
+        #endregion
     }
 }
