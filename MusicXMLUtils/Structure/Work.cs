@@ -38,6 +38,7 @@ namespace MusicXMLUtils.Structure
     [XmlType("work")]
     public class Work
     {
+        #region -- Public Properties --
         [XmlElement("work-number")]
         public string WorkNumber { get; set; }
 
@@ -46,5 +47,6 @@ namespace MusicXMLUtils.Structure
 
         [XmlElement("opus")]
         public Opus Opus { get; set; }
+        #endregion
     }
 }
