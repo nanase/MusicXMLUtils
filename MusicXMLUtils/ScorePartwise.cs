@@ -45,7 +45,7 @@ namespace MusicXMLUtils
         public ScorePartwisePart[] Part { get; set; }
         #endregion
 
-        #region -- Protected Methods --
+        #region -- Protected Properties --
         protected override string DocTypeName
         {
             get { return "score-partwise"; }

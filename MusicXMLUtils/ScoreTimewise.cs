@@ -45,7 +45,7 @@ namespace MusicXMLUtils
         public ScoreTimewiseMeasure[] Measure { get; set; }
         #endregion
 
-        #region -- Protected Methods --
+        #region -- Protected Properties --
         protected override string DocTypeName
         {
             get { return "score-timewise"; }
